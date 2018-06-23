@@ -6,6 +6,22 @@
     .bakeryfeaturedlist li a{
         font-size: 10px;
     }
+    .bakerymagazine1 .bakerymt,
+    .bakerymagazine2 .bakerymt{
+        width: 70%;
+    }
+    .magazinef1{
+        top: 15%; 
+        left: 70%;
+    }
+    .magazinef2{
+        top: 15%; 
+        right: 60%;
+    }
+    .elipses{
+        width: 50px;
+        height: 45px;
+    }
 }
 
 @media(min-width:768px) {
@@ -49,7 +65,18 @@
 #bakerymenuclose {
     display: none;
 }
-
+    .bakerymagazine1 .bakerymt,
+    .bakerymagazine2 .bakerymt{
+        width: 40%;
+    }
+    .magazinef1{
+        top: 15%; 
+        left: 50%;
+    }
+    .magazinef2{
+        top: 20%; 
+        right: 50%;
+    }
 
 
 
@@ -65,12 +92,46 @@
     .bakeryfeaturedlist li a{
         font-size: 12px;
     }
+    .bakerymagazine1 .bakerymt,
+    .bakerymagazine2 .bakerymt{
+        width: 20%;
+        margin-right: 200px;
+        margin-left: 100px;
+    }
+    .magazinef1{
+        top: 20%; 
+        left: 50%;
+    }
+    .magazinef2{
+        top: 30%; 
+        right: 60%;
+    }
+    .elipses{
+        width: 80px;
+        height: 75px;
+    }
 }
 
 @media(min-width:1200px) {
-
+    .magazinef1{
+        top: 17%; 
+        left: 33%;
+    }
+    .magazinef2{
+        top: 17%; 
+        right: 32%;
+    }
 }
 
 @media(min-width:1400px) {
-    
+    .bakerymagazine1 .bakerymt,
+    .bakerymagazine2 .bakerymt{
+        width: 20%;
+        margin-right: 500px;
+        margin-left: 300px;
+    }
+    .elipses{
+        width: 120px;
+        height: 110px;
+    }
 }
