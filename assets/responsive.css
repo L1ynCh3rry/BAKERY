@@ -3,7 +3,9 @@
 }
 
 @media(min-width:576px) {
-   
+    .bakeryfeaturedlist li a{
+        font-size: 10px;
+    }
 }
 
 @media(min-width:768px) {
@@ -59,6 +61,9 @@
         display: inline;
         padding: 0 10px;
         font-size: 13px;
+    }
+    .bakeryfeaturedlist li a{
+        font-size: 12px;
     }
 }
 

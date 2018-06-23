@@ -40,16 +40,16 @@ $(document).ready(function() {
 
         // PICTURES SWIPER
           var swiper = new Swiper('.PSWIPER', {
-            effect: 'coverflow',
-            grabCursor: true,
-            centeredSlides: true,
             slidesPerView: 'auto',
-            coverflowEffect: {
-              rotate: 50,
-              stretch: 0,
-              depth: 100,
-              modifier: 1,
-              slideShadows : true,
+            spaceBetween: 30,
+            freeMode: true,
+            navigation: {
+              nextEl: '.bakeryswiper-button-next',
+              prevEl: '.bakeryswiper-button-prev',
+            },
+            pagination: {
+              el: '.bakeryswiper-pagination',
+              type: 'fraction',
             }
           });
 
