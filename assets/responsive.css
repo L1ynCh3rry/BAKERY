@@ -1,0 +1,50 @@
+@media(min-width:320px) {
+
+}
+
+@media(min-width:576px) {
+   
+}
+
+@media(min-width:768px) {
+    #bakerymenu{
+    float: right;
+}
+#bakerymenu li{
+    display: inline;
+    padding: 0 15px;
+}
+#bakerymenu a{
+    text-decoration: none;
+    color: black;
+}
+#bakerymenu a:hover{
+    color: #fd8f0e!important;
+}
+#bakerymenu a.active{
+    color: #fd8f0e!important;
+}
+#bakerymenu a:hover{
+    text-decoration: none;
+    color: black;
+}
+.banner3 p{
+    font-size: 1em;
+}
+}
+
+@media(min-width:850px) {
+    
+}
+
+@media(min-width:992px) {
+
+}
+
+@media(min-width:1200px) {
+
+}
+
+@media(min-width:1400px) {
+    
+}

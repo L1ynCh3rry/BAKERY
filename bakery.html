@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Bakery">
+    <meta name="keywords" content="Bakery">
+    <meta name="author" content="CUBES">
+    <title>Bakery</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&amp;subset=cyrillic,latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&amp;subset=cyrillic,latin-ext" rel="stylesheet">
+
+    <!-- SWIPER CSS-->
+    <link rel="stylesheet" href="assets/swiper.min.css">
+
+    <!-- BOOTSTRAP-->
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap.min.css" />
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+
+    <!-- BAKERY SETTINGS -->
+    <link rel="stylesheet" type="text/css" href="assets/bakery/bakerysettings.css" />
+
+    <!-- RESPONSIVE -->
+    <link rel="stylesheet" type="text/css" href="assets/responsive.css" />
+</head>
+
+<body style="position: relative; padding-top: 40px;">
+
+
+    <div class="mt-4" id="bakerysearch" style="position: absolute; width: 80vw; left: 10vw; z-index: 5; top: -70px; transition: 0.1s linear;">
+        <input type="text" placeholder="Search products">
+        <i class="fas fa-search" style="color: #fd8f0e; position: absolute; right: 20px; top: 10px;"></i>
+        <a href="#">
+            <i class="fas fa-times pt-2 fa-lg" style="color: #fd8f0e; position: absolute; left: 48%;" id="bakerysearchclose"></i>
+        </a>
+    </div>
+
+    <!-- HEADER -->
+
+    <div class="row justify-content-between no-gutters p-4 bakerynav" id="bakerynav" style="background-color: rgba(255, 255, 255, 0.94); position: fixed; top: 0; left: 0; width: 100%; max-height: 80px; z-index: 4">
+        <!-- LOGO -->
+        <div class="col-4">
+            <a href="#home">
+                <figure class="d-inline pr-2">
+                    <img src="assets/photos/logo.png">
+                </figure>
+                <h2 class="d-inline" style="color: #fd8f0e;">
+                    <strong>Bakery</strong>
+                </h2>
+            </a>
+        </div>
+        <div class="col-8">
+            <div class="row">
+                <!-- NAVIGATION -->
+                <div class="col-10">
+                    <menu id="bakerymenu">
+                        <ul class="list-unstyled bakeryul" style="color: #7e7671;">
+                            <li>
+                                <a href="#home">Home</a>
+                            </li>
+                            <li>
+                                <a href="#club">Club</a>
+                            </li>
+                            <li>
+                                <a href="#recipes">Recipes</a>
+                            </li>
+                            <li>
+                                <a href="#pictures">Pictures</a>
+                            </li>
+                            <li>
+                                <a href="#magazine">Magazine</a>
+                            </li>
+                            <li>
+                                <a href="#blogs">Blogs</a>
+                            </li>
+                        </ul>
+                    </menu>
+                </div>
+                <!-- SEARCH AND SHOPING BASKET -->
+                <div class="col-2 pt-3">
+                    <span class="d-inline mx-1" style="background-color: #e8e9e0;color: #e8e9e0; width: 1px; height: 10px; border-radius: 5px">.</span>
+                    <a href="#" id="bakerysearchtoggle">
+                        <i class="fas fa-search fa-lg mx-1" style="color: #fd8f0e"></i>
+                    </a>
+                    <span class="d-inline mx-1" style="background-color: #e8e9e0;color: #e8e9e0; width: 1px; height: 10px; border-radius: 5px">.</span>
+
+                    <div style="display: inline; position: relative;">
+                        <a href="#">
+                            <i class="fas fa-shopping-basket fa-lg" style="color: #fd8f0e"></i>
+                        </a>
+                        <p class="px-2" style="color: #fff; position: absolute; left: 15px; bottom: 0; background: #fd8f0e; border-radius: 50%;">
+                            <strong>4</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- NAVIGATION END -->
+
+
+
+
+
+
+
+
+    <section id="home">
+        <!-- SWIPER BEGIN -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+
+                <!-- SLINDER 1 -->
+                <div class="swiper-slide" data-height="100" style="background: #fafafb url('assets/photos/bakery/topphoto.png') no-repeat right;">
+                    <div class="float-center">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-5 text-center" style="margin-top: 20%;">
+                                    <img src="assets/photos/bakery/breadicon.png" class="mb-2">
+                                    <h4 class="subtitle">- Bakery Goods -</h4>
+                                    <h3 class="bakerywide m-b-sm uc">
+                                        <strong>Bread products</strong>
+                                    </h3>
+                                    <p class="bakerycolor">There are many variations of passages</p>
+                                </div>
+                            </div>
+                            <figure style="position: absolute; top: 25%; right: 5%;">
+                                <img src="assets/photos/bakery/elipse.png">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- SLIDER 1 END -->
+
+                <!-- SLINDER 2 -->
+                <div class="swiper-slide" data-height="100" style="background: #fafafb url('assets/photos/bakery/topphoto.png') no-repeat right;">
+                    <div class="float-center">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-5 text-center" style="margin-top: 20%;">
+                                    <img src="assets/photos/bakery/breadicon.png" class="mb-2">
+                                    <h4 class="subtitle">- Bakery Goods -</h4>
+                                    <h3 class="bakerywide m-b-sm uc">
+                                        <strong>Bread products</strong>
+                                    </h3>
+                                    <p class="bakerycolor">There are many variations of passages</p>
+                                </div>
+                            </div>
+                            <figure style="position: absolute; top: 25%; right: 5%;">
+                                <img src="assets/photos/bakery/elipse.png">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- SLIDER 2 END -->
+
+                <!-- SLINDER 3 -->
+                <div class="swiper-slide" data-height="100" style="background: #fafafb url('assets/photos/bakery/topphoto.png') no-repeat right;">
+                    <div class="float-center">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-5 text-center" style="margin-top: 20%;">
+                                    <img src="assets/photos/bakery/breadicon.png" class="mb-2">
+                                    <h4 class="subtitle">- Bakery Goods -</h4>
+                                    <h3 class="bakerywide m-b-sm uc">
+                                        <strong>Bread products</strong>
+                                    </h3>
+                                    <p class="bakerycolor">There are many variations of passages</p>
+                                </div>
+                            </div>
+                            <figure style="position: absolute; top: 25%; right: 5%;">
+                                <img src="assets/photos/bakery/elipse.png">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- SLIDER 3 END -->
+
+                <!-- SLINDER 4 -->
+                <div class="swiper-slide" data-height="100" style="background: #fafafb url('assets/photos/bakery/topphoto.png') no-repeat right;">
+                    <div class="float-center">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-5 text-center" style="margin-top: 20%;">
+                                    <img src="assets/photos/bakery/breadicon.png" class="mb-2">
+                                    <h4 class="subtitle">- Bakery Goods -</h4>
+                                    <h3 class="bakerywide m-b-sm uc">
+                                        <strong>Bread products</strong>
+                                    </h3>
+                                    <p class="bakerycolor">There are many variations of passages</p>
+                                </div>
+                            </div>
+                            <figure style="position: absolute; top: 25%; right: 5%;">
+                                <img src="assets/photos/bakery/elipse.png">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- SLIDER 4 END -->
+
+
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons 
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+
+            <!-- If we need scrollbar 
+                <div class="swiper-scrollbar"></div> -->
+        </div>
+        <!-- SWIPER ENDS -->
+    </section>
+
+
+
+
+
+
+
+    <!-- CLUB BEGIN -->
+    <section id="club">
+        <div class="row no-gutters bakerybanners">
+            <div class="col-12 col-lg-4">
+                <figure>
+                    <img src="assets/photos/bakery/banner1.jpg">
+                </figure>
+            </div>
+            <div class="col-12 col-lg-4" style="position: relative;">
+                <figure style="position: relative;">
+                    <img src="assets/photos/bakery/banner2.jpg">
+                    <div style="position: absolute; top: 10%; left: 10%;">
+                        <img class="mb-4" src="assets/photos/bakery/sale30.png" style="width: 90px; height: 90px;">
+                        <h3 class="mb-0 bakerywide" style="color: white;">DEAL OF THE DAY</h3>
+                        <p style="color: white;">There are many variations of passages</p>
+                        <h4 class="mb-4" style="color: #fd8f0e;">ONLY $17</h4>
+                        <a class="py-2 px-3 bakeryshopnow" href="#">SHOP NOW</a>
+                    </div>
+                </figure>
+                <div style="position: absolute; top: 49%; left: -20px; color: #395382; font-size: 28px; cursor: default">&#9664;</div>
+            </div>
+            <div class="col-12 col-lg-4 text-center banner3 px-4">
+                <img src="assets/photos/logo.png" style="width: 70px; height: 50px;" class="mb-4">
+                <h1 style="color: #3e2720">
+                    <strong>- BAKERY -</strong>
+                </h1>
+                <h4 class="bakerycolor mb-4">SINCE 1986</h4>
+                <p class="mb-4">But the majority have suffered alteration in some form, by injected humour, or randomisCurabitur venenatis
+                    lorem a urna tempor...</p>
+                <a href="#" class="bakerymore py-2 px-4">
+                    <strong>MORE</strong>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- CLUB ENDS-->
+
+    <!-- RECIPES BEGIN -->
+    <section id="recipes">
+        <div class="row banner4 no-gutters text-center">
+            <div class="col-8 col-lg-4 m-auto" style="text-align: center; padding-top: 100px">
+                
+                <div class="recipe" style="padding-top: 120px;">
+                    <div style="margin-top: -140px; margin-bottom: 50px">
+                            <h4 class="subtitle" style="color: #3e2720;"><strong>- Bakery Goods -</strong></h4>
+                            <h2 style="color: #3e2720;" class="bakerywide mb-5"><strong>NEWEST PRODUCTS</strong></h2>
+                    </div>
+                    <h4 style="color: #3e2720;"><strong>BREAD TEXT </strong><span style="color: #fd8f0e"><strong>$17</strong></span></h4>
+                    <p style="color: #3e2720;"><strong>.............................................................................................</strong></p>
+                    <p style="color: #3e2720;" class="mb-5"><img src="assets/photos/bakery/recipeicon1.png" class="pr-4">But the majority</p>
+                    <p style="color: #3e2720;" class="mb-5"><img src="assets/photos/bakery/recipeicon2.png" class="pr-4">But the majority</p>
+                    <p style="color: #3e2720;" class="mb-5"><img src="assets/photos/bakery/recipeicon3.png" class="pr-4">But the majority</p>
+                </div>
+                <a style="border-radius: 50px; color: #3e2720; border: 2px solid #3e2720;" class="px-4 py-2" href="#"><strong>SHOP NOW</strong></a>
+            </div>
+        </div>
+    </section>
+    <!-- RECIPES ENDS -->
+
+
+    <!-- FEATURED PRODUCTS BEGIN -->
+    <section id="pictures" style="padding-top: 100px">
+        <div class="row pl-4 no-gutters">
+            <div class="col-1 text-center">
+                    <img src="assets/photos/bakery/bread.png">
+            </div>
+            <div class="col-11">
+                    <h2 style="color: #3e2720; text-transform: uppercase;"><strong>Featured products</strong></h2>
+                    <p style="color: #3e2720; text-transform: uppercase;" class="bakerywide"><strong>all / breads / rolls / cookies / cakes / other</strong></p>
+            </div>
+        </div>
+            <div class="PSWIPER pt-5" style="overflow: hidden;">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="assets/photos/bakery/product1.jpg"><h4 class="mt-2 ml-2">Breads &amp; Rolls</h4><p class="mt-2 ml-2">$17</p></div>
+                      <div class="swiper-slide"><img src="assets/photos/bakery/product2.png"><h4 class="mt-2 ml-2">Breads &amp; Rolls</h4><p class="mt-2 ml-2">$17</p></div>
+                      <div class="swiper-slide"><img src="assets/photos/bakery/product3.png"><h4 class="mt-2 ml-2">Breads &amp; Rolls</h4><p class="mt-2 ml-2">$17</p></div>
+                      <div class="swiper-slide"><img src="assets/photos/bakery/product4.jpg"><h4 class="mt-2 ml-2">Breads &amp; Rolls</h4><p class="mt-2 ml-2">$17</p></div>
+                      <div class="swiper-slide"><img src="assets/photos/bakery/product1.jpg"><h4 class="mt-2 ml-2">Breads &amp; Rolls</h4><p class="mt-2 ml-2">$17</p></div>
+                      <div class="swiper-slide"><img src="assets/photos/bakery/product2.png"><h4 class="mt-2 ml-2">Breads &amp; Rolls</h4><p class="mt-2 ml-2">$17</p></div>
+                      <div class="swiper-slide"><img src="assets/photos/bakery/product3.png"><h4 class="mt-2 ml-2">Breads &amp; Rolls</h4><p class="mt-2 ml-2">$17</p></div>
+                      <div class="swiper-slide"><img src="assets/photos/bakery/product4.jpg"><h4 class="mt-2 ml-2">Breads &amp; Rolls</h4><p class="mt-2 ml-2">$17</p></div>
+                      <div class="swiper-slide"><img src="assets/photos/bakery/product1.jpg"><h4 class="mt-2 ml-2">Breads &amp; Rolls</h4><p class="mt-2 ml-2">$17</p></div>
+                      <div class="swiper-slide"><img src="assets/photos/bakery/product2.png"><h4 class="mt-2 ml-2">Breads &amp; Rolls</h4><p class="mt-2 ml-2">$17</p></div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                  </div>
+
+    </section>
+    <!-- FEATURED PRODUCTS END -->
+
+
+
+
+
+
+    <!-- JQUERY -->
+    <script src="assets/jquery.js" type="text/javascript"></script>
+    <!-- JAVASCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="assets/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/main.js" type="text/javascript"></script>
+    <script src="assets/swiper.min.js"></script>
+</body>
+
+</html>

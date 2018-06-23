@@ -1,0 +1,15 @@
+
+figure{
+    margin-bottom: 0;
+}
+.swiper-container {
+    width: 100%;
+    height: 700px;
+}
+.uc{
+    text-transform: uppercase;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
