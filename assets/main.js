@@ -10,16 +10,18 @@ $(document).ready(function() {
     });
 
 
-    /*
-     SEARCH TOGGLE 
-    $('#searchicon').click(function() {
-        $('#searchinput').addClass('searchactive');
-        $('#searchclose').addClass('closeactive');
-    });
-    $('#searchclose').click(function() {
-        $('#searchinput').removeClass('searchactive');
-        $('#searchclose').removeClass('closeactive');
-    });  */
+
+    /* NAVIGATION TOGGLE BUTTON */ 
+    $('#bakerynavbutton').click(function() {
+      $('#bakerymenu').addClass('bakerymenuactive');
+      $('#body').addClass('overflow');
+  });
+
+  $('#bakerymenuclose').click(function() {
+      $('#bakerymenu').removeClass('bakerymenuactive');
+      $('#body').removeClass('overflow');
+  });
+
 
    
         // TOP SWIPER

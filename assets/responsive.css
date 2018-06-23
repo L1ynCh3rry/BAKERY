@@ -7,16 +7,26 @@
 }
 
 @media(min-width:768px) {
-    #bakerymenu{
+#bakerymenu{
     float: right;
+    position: static;
+    top: 0;
+    background: transparent;
+    z-index: 0;
+    padding-top: 15px;
 }
 #bakerymenu li{
     display: inline;
-    padding: 0 15px;
+    padding: 0 5px;
+    font-size: 10px;
 }
-#bakerymenu a{
+#bakerymenu li a{
     text-decoration: none;
     color: black;
+    text-transform: none;
+    letter-spacing: 0px;
+    padding-top: 0px;
+    text-transform: none;
 }
 #bakerymenu a:hover{
     color: #fd8f0e!important;
@@ -31,14 +41,25 @@
 .banner3 p{
     font-size: 1em;
 }
+#bakerynavbutton {
+    display: none;
+}
+#bakerymenuclose {
+    display: none;
 }
 
-@media(min-width:850px) {
-    
+
+
+
 }
+
 
 @media(min-width:992px) {
-
+    #bakerymenu li{
+        display: inline;
+        padding: 0 10px;
+        font-size: 13px;
+    }
 }
 
 @media(min-width:1200px) {
