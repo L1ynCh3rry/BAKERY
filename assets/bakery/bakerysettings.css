@@ -174,13 +174,16 @@ body{
 .bakeryfeaturedlist li a.active{
     color: #fd8f0e;
 }
+/* ANDROID MENU */
 .bakerymenuactive{
     top: 0!important;
 }
 #bakerymenu {
-    padding-top: 15%;
+    padding-top: 5%;
     position: fixed;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(253,141,14,1);
+    background: -moz-linear-gradient(-45deg, rgba(253,141,14,1) 0%, rgba(204,116,16,1) 26%, rgba(253,141,14,1) 50%, rgba(209,117,19,1) 76%, rgba(253,141,14,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(253,141,14,1)), color-stop(26%, rgba(204,116,16,1)), color-stop(50%, rgba(253,141,14,1)), color-stop(76%, rgba(209,117,19,1)), color-stop(100%, rgba(253,141,14,1)));
     width: 100%;
     height: 100%;
     transition: 0.2s ease;
@@ -189,7 +192,7 @@ body{
     z-index: 4
 }
 #bakerymenu li a{
-    color: #fd8f0e;
+    color: #000;
     text-transform: uppercase;
     letter-spacing: 4px;
     padding-top: 5px;
@@ -198,7 +201,7 @@ body{
     position: absolute; 
     left: 50%; 
     bottom: 25px; 
-    color: #fd8f0e;
+    color: #000;
 }
 /* ---- MAGAZINE ---- */
 .bakerymagazine1 {
@@ -245,3 +248,118 @@ bakerymagazine2 p{
     border-radius: 50px;
     border: 2px solid #fd8f0e;
 }
+
+/* BLOG */
+.bakeryblog .banner4{
+    background: url('../photos/bakery/banner4.jpg') no-repeat; 
+    background-size: cover;
+    min-height: 780px;
+}
+.bakeryblog .banner5{
+    background: url('../photos/bakery/banner5.jpg') no-repeat; 
+    background-size: cover; 
+    padding-top: 200px; 
+    min-height: 780px;
+}
+.bakeryblog a{
+    border-radius: 50px; 
+    border: 2px solid white; 
+    color: white; 
+    display: inline-block;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.bakeryblog span{
+    background: rgba(255, 255, 255, 0.2); 
+    height: 1px; 
+    display: block;
+    margin: auto;
+}
+.bakeryblog h2{
+    color: white; 
+    text-transform: uppercase;
+    letter-spacing: 5px
+}
+.bakeryblog .blogdate{
+    font-size: 16px;
+    letter-spacing: 2px;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease;
+}
+.bakeryblog .blogdate:hover{
+    border-bottom: 2px solid #fd8f0e;
+}
+.bakeryblog a:hover{
+    color: #395382;
+}
+/* FOOTER */
+footer h4{
+    color: #3e2720;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+footer p{
+    color: #898989;
+}
+footer ul li a{
+    color: #898989;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+footer img{
+    width: 100%;
+    height: 100%;
+}
+footer .row{
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+footer a{
+    color: #898989;
+}
+footer{
+    background: #fafafb;
+}
+footer span{
+    color: #000;
+    font-weight: bold;
+}
+footer input.input,
+footer input.input:active,
+footer input.input:focus,
+footer input.input:hover{
+    border: none;
+    border-bottom: 2px solid #fd8f0e;
+    padding: 5px 0;
+    background: #fafafb;
+    width: 100%;
+    color: #fd8f0e
+}
+footer input.send{
+    background: #fafafb;
+    border: none;
+    color: #fd8f0e;
+    font-weight:  800;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+footer input.input::placeholder{
+    color: rgba(0, 0, 0, 0.4)
+}
+footer h2{
+    color: #fd8f0e;
+}
+footer .logo{
+    width: 60px;
+    height: 50px;
+    margin: auto;
+}
+
+
+
+
+
