@@ -64,7 +64,7 @@ body{
     color: white;
 }
 .bakeryshopnow:hover{
-    color: #395382;
+    color: #395382!important;
 }
 .bakerymore{
     color: #3e2720; 
