@@ -10,12 +10,12 @@ body{
     color: #e8e9e0; 
     width: 1px; 
     height: 10px; 
-    border-radius: 5px
+    border-radius: 5px;
 }
 .bakeryss p{
     color: #fff; 
     position: absolute; 
-    left: 15px; 
+    left: 22px; 
     bottom: 0; 
     background: #fd8f0e; 
     border-radius: 50%;
@@ -45,7 +45,7 @@ body{
 }
 
 .bakerywide{
-    letter-spacing: 6px;
+    letter-spacing: 7px;
 }
 .bakerycolor{
     color: #fd8f0e;
@@ -71,12 +71,14 @@ body{
     border: 2px solid #3e2720; 
     border-radius: 50px;
 }
-.banner3{
-    background: url('../photos/bakery/banner3.png') no-repeat center; 
-    background-size: 90%; 
-    padding-top: 7%; 
-    padding-left: 110px; 
-    padding-right: 110px;
+.banner3{ 
+    position: relative;
+}
+.banner3inside{
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    margin-top: 2%;
 }
 .banner3 p{
     font-size: 0.4em;
@@ -85,11 +87,35 @@ body{
     background: url('../photos/bakery/banner3.jpg') no-repeat center;
     background-size: cover; 
 }
+/* RECIPES SECTION */
 .recipe{
     background: url('../photos/bakery/recipe.png') no-repeat center; 
     background-size: 70%;
-    height: 450px;
+    min-height: 250px;
     text-align: center;
+    padding: 10% 5px;
+    margin-top: -10%;
+}
+#recipes p{
+    font-size: 5px;
+    margin-bottom: 2px;
+}
+#recipes .recipesdiv{
+    text-align: center; 
+    min-height: 750px;
+}
+#recipes a {
+    border-radius: 50px; 
+    color: #3e2720; 
+    border: 2px solid #3e2720;
+    display: inline-block;
+    margin: auto;
+}
+#recipes h4.bakerybreadtext{
+    color: #3e2720;
+    border-bottom: 1px dotted rgba(207, 204, 199, 0.4);
+    width: 57%;
+    margin: auto;
 }
 /* ---- PSWIPER ---- */
 .PSWIPER .swiper-container {
