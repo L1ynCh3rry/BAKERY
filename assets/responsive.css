@@ -80,6 +80,16 @@
         top: 20%; 
         right: 50%;
     }
+    #recipes p{
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+    .recipe img{
+        max-width: 45px;
+    }
+    .recipe h4{
+        font-size: 18px;
+    }
 
 
 
@@ -116,6 +126,17 @@
     .banner3inside{
         margin-top: 2%;
     }
+    #recipes p{
+        font-size: 8px;
+        margin-bottom: 12px;
+    }
+    .recipe img{
+        max-width: 35px;
+    }
+    .recipe h4{
+        font-size: 16px;
+        padding-top: 15px;
+    }
 }
 
 @media(min-width:1200px) {
@@ -126,6 +147,16 @@
     .magazinef2{
         top: 17%; 
         right: 32%;
+    }
+    #recipes p{
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+    .recipe img{
+        max-width: 45px;
+    }
+    .recipe h4{
+        font-size: 20px;
     }
 }
 
@@ -142,5 +173,15 @@
     }
     .banner3inside{
         margin-top: 25%;
+    }
+    #recipes p{
+        font-size: 20px;
+        margin-bottom: 22px;
+    }
+    .recipe img{
+        max-width: 45px;
+    }
+    .recipe h4{
+        font-size: 24px;
     }
 }

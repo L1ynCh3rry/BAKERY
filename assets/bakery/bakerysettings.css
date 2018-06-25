@@ -98,7 +98,13 @@ body{
 }
 #recipes p{
     font-size: 5px;
-    margin-bottom: 2px;
+    margin-bottom: 22px;
+}
+.recipe img{
+    max-width: 35px;
+}
+.recipe h4{
+    font-size: 14px;
 }
 #recipes .recipesdiv{
     text-align: center; 
