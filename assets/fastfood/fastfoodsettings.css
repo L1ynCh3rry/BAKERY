@@ -1,0 +1,131 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: #ecece6;
+}
+img{
+    max-width: 100%;
+}
+#fflogo {
+    font-weight: 700;
+    font-size: 32px;
+}
+#ffnavigation {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    background: transparent;
+    z-index: 3;
+    padding-top: 20px;
+    transition: 0.2s ease;
+}
+#ffnavigation ul li a{
+    color: #bfb9b1;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 4px;
+}
+#ffnavigation ul li a:hover{
+    border-bottom: 2px solid #df8307;
+}
+#ffnavigation ul li a.active{
+    border-bottom: 2px solid #df8307;
+}
+#ffnavigation ul li:last-of-type a{
+    color: #ff9400;
+}
+#ffnavigation ul li:nth-last-of-type(2) a{
+    color: white;
+}
+#ffnavigation ul li{
+    padding: 0 15px;
+    float: left;
+}
+#ffnavigation ul{
+    padding-top: 15px;
+}
+.shrink{
+    height: 65px!important;
+    padding-top: 5px!important;
+    background: rgba(0, 0, 0, 0.4)!important;
+}
+/* FIND YOUR DISHES */
+.topbannerdiv {
+    position: absolute; 
+    top: 20%; 
+    width: 100%;
+}
+#fffyd h1{
+    font-size: 64px;
+    font-weight: 900;
+    color: #fff;
+}
+#fffyd h3{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+}
+.fyd{
+    width: 250px;
+    margin-left: 50%;
+    margin-top: 50px;
+    transform: translateX(-125px); 
+}
+.fyd h2,
+.fyd p,
+.fyd .fydicons,
+.fyd .fydplus,
+.fyd .ffprice{
+    background: #f0f0ec;
+    color: #4b4844;
+    padding: 15px 0;
+    float: left;
+    display: inline-block;
+}
+.fyd h2,
+.fyd p{
+    width: 100%;
+}
+.fyd .fydicons,
+.fyd .fydplus,
+.fyd h2,
+.fyd p{
+    height: 52px;
+}
+.fyd .fydicons{
+    width: 24.25%;
+}
+.fyd .fydplus{
+    width: 50%;
+    margin-bottom: 1.5%;
+}
+.fyd .ffprice{
+    width: 48.5%;
+    height: 107px;
+    font-size: 54px;
+    margin-right: 1.5%;
+}
+.fyd .ffprice span{
+    vertical-align: 30px;
+    font-size: 16px;
+}
+/* TOP OFFERS */
+#container {
+    width: 70%;
+    background: #fff;
+    margin-top: -50px;
+    margin: auto;
+    z-index: 2;
+}
+.fftopoffers figure h4{
+    color: #4a443f;
+    float: left;
+    display: inline-block;
+}
+.toinfo{
+    color: #c26a24;
+    display: inline-block;
+    float: right;
+}
