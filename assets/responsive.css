@@ -90,7 +90,32 @@
     .recipe h4{
         font-size: 18px;
     }
-
+    /*
+    FAST FOOD RESPONSIVE
+    */
+    #ffnavigation ul li a{
+        color: #bfb9b1;
+        text-transform: uppercase;
+        font-weight: 500;
+        border-bottom: 2px solid transparent;
+        padding-bottom: 4px;
+        font-size: 10px;
+    }
+    #ffnavigation ul li{
+        padding: 0 2px;
+        float: left;
+    }
+    #ffnavigation #ffmenu{
+        padding-top: 15px;
+        position: static;
+        width: auto;
+        height: auto;
+        background: transparent;
+    }
+    #ffmenuclose,
+    #ffmenutoggle{
+        display: none;
+    }
 
 
 }
@@ -137,6 +162,15 @@
         font-size: 16px;
         padding-top: 15px;
     }
+    /*
+    FAST FOOD
+    */
+    #ffnavigation ul li a{
+        font-size: 12px;
+    }
+    #ffnavigation ul li{
+        padding: 0 10px;
+    }
 }
 
 @media(min-width:1200px) {
@@ -157,6 +191,12 @@
     }
     .recipe h4{
         font-size: 20px;
+    }
+    #ffnavigation ul li a{
+        font-size: 12px;
+    }
+    #ffnavigation ul li{
+        padding: 0 15px;
     }
 }
 

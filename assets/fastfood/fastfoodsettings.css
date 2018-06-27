@@ -5,6 +5,7 @@ body{
 img{
     max-width: 100%;
 }
+/* NAVIGATION */
 #fflogo {
     font-weight: 700;
     font-size: 32px;
@@ -21,7 +22,7 @@ img{
     transition: 0.2s ease;
 }
 #ffnavigation ul li a{
-    color: #bfb9b1;
+    color: #fff;
     text-transform: uppercase;
     font-weight: 500;
     border-bottom: 2px solid transparent;
@@ -40,22 +41,37 @@ img{
     color: white;
 }
 #ffnavigation ul li{
-    padding: 0 15px;
-    float: left;
+    padding: 10px 15px;
 }
-#ffnavigation ul{
+#ffnavigation #ffmenu{
     padding-top: 15px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: 0.2s ease;
+    z-index: 7;
 }
 .shrink{
     height: 65px!important;
     padding-top: 5px!important;
     background: rgba(0, 0, 0, 0.4)!important;
 }
+#ffmenutoggle{
+    color: #f48e02;
+    margin-top: 10px;
+}
+.ffmenuactive{
+    top: 0!important;
+}
 /* FIND YOUR DISHES */
 .topbannerdiv {
     position: absolute; 
     top: 20%; 
-    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
 }
 #fffyd h1{
     font-size: 64px;
@@ -112,20 +128,80 @@ img{
     font-size: 16px;
 }
 /* TOP OFFERS */
-#container {
+#ffcontainer {
     width: 70%;
-    background: #fff;
-    margin-top: -50px;
     margin: auto;
-    z-index: 2;
+    background-color: #fff;
+    margin-top: -20px;
+    position: relative;
+}
+#container .fftopoffers {
+    
 }
 .fftopoffers figure h4{
     color: #4a443f;
     float: left;
     display: inline-block;
+    font-size: 14px;
 }
 .toinfo{
     color: #c26a24;
     display: inline-block;
     float: right;
+    font-size: 12px;
+}
+.fftopoffers div.col{
+    padding: 0 15px;
+}
+.fftopoffers figure img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+/* HOVER */
+.fftopoffers figure:hover .topofferhover{
+    display: block;
+}
+.topofferhover {
+    position: absolute; 
+    top: 15%;
+    left: 20%;
+    width: 60%;
+    height: 70%;
+    display: none;
+}
+.topofferhover .hovericons,
+.topofferhover .hoverplus,
+.topofferhover .hoverprice{
+    background: #f0f0ec;
+    color: #4b4844;
+    padding: 15px 0;
+    float: left;
+    display: inline-block;
+}
+.topofferhover .hoverprice,
+.topofferhover .hoverplus{
+    width: 100%;
+}
+.topofferhover .hovericons,
+.topofferhover .hoverplus{
+    height: 24%;
+}
+.topofferhover .hovericons{
+    width: 49%;
+}
+.fyd .fydicons{
+    width: 24.25%;
+}
+.topofferhover .hoverprice{
+    height: 50%;
+    font-size: 54px;
+    margin-right: 1%;
+}
+.topofferhover .hoverprice span{
+    vertical-align: 30px;
+    font-size: 16px;
+}
+.topofferhover figure img{
+    width: 25px;
+    height: 25px;
 }

@@ -34,53 +34,56 @@
     <link rel="stylesheet" type="text/css" href="assets/responsive.css" />
 </head>
 
-<body>
+<body id="body">
 
     <!-- NAVIGATION -->
     <section id="ffnavigation">
-        <dov class="row no-gutters">
-            <div class="col-4 text-right">
+        <div class="row no-gutters">
+            <div class="col-8 col-md-3 text-right">
                 <!-- LOGO -->
-                <a href="#" style="color: #e2dad1;" id="fflogo" class="mr-5">Fast
-                    <span style="color: #f48e02">Food</span>
-                </a>
+                <a href="#" style="color: #e2dad1;" id="fflogo" class="mr-5">Fast<!--
+                --><span style="color: #f48e02">Food</span></a>
             </div>
-            <div class="col-8">
+            <div class="col-4 col-md-9">
                 <!-- MENU BEGIN -->
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#" class="active">about</a>
-                    </li>
-                    <li>
-                        <a href="#topoffers">products</a>
-                    </li>
-                    <li>
-                        <a href="#">blog</a>
-                    </li>
-                    <li>
-                        <a href="#">shop</a>
-                    </li>
-                    <li>
-                        <a href="#">cusine</a>
-                    </li>
-                    <li>
-                        <a href="#">gallery</a>
-                    </li>
-                    <li>
-                        <a href="#">contact</a>
-                    </li>
-                    <li>
-                        <a href="#">my account</a>
-                    </li>
-                    <li>
-                        <a href="#">cart
-                            <span>3($50)</span>
-                        </a>
-                    </li>
-                </ul>
+                <menu id="ffmenu" class="mt-0">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="active">about</a>
+                        </li>
+                        <li>
+                            <a href="#topoffers">products</a>
+                        </li>
+                        <li>
+                            <a href="#">blog</a>
+                        </li>
+                        <li>
+                            <a href="#">shop</a>
+                        </li>
+                        <li>
+                            <a href="#">cusine</a>
+                        </li>
+                        <li>
+                            <a href="#">gallery</a>
+                        </li>
+                        <li>
+                            <a href="#">contact</a>
+                        </li>
+                        <li>
+                            <a href="#">my account</a>
+                        </li>
+                        <li>
+                            <a href="#">cart
+                                <span>3($50)</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p style="position: absolute; bottom: 0; left: 50%;" id="ffmenuclose"><i class="fas fa-times" style="color: #fff;"></i></p>
+                </menu>
+                <i class="fas fa-caret-square-down fa-2x" id="ffmenutoggle"></i>
                 <!-- MENU ENDS -->
             </div>
-        </dov>
+        </div>
     </section>
 
 
@@ -129,16 +132,35 @@
 
     <!-- TOP OFFERS SECTION-->
     <section id="topoffers">
-        <div id="container" class="text-center">
+        <div id="ffcontainer" class="text-center px-md-4 px-lg-5 py-4">
             <!-- TOP OFFERS TITLE -->
-            <h3 style="color: #54514e;">- Top Offers -</h3>
+            <h3 style="color: #54514e; font-weight: 600;">- Top Offers -</h3>
             <!-- TOP OFFERS DIV -->
-            <div class="row no-guttersr fftopoffers">
-                <div class="col-12 col-md-6 col-lg-3 px-0">
-                    <figure>
+            <div class="row no-gutters fftopoffers pt-3">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <figure style="position: relative;">
                         <img src="assets/photos/fastfood/topoffer1.jpg">
-                        <h4>Popular england tea</h4>
-                        <p class="toinfo">+ info</p>
+                        <h4 class="mb-0">Popular england tea</h4>
+                        <a href class="toinfo">+ info</a>
+                        <!-- HOVER -->
+                            <div class="topofferhover">
+                                <!-- PRICE -->
+                                <p class="mb-1 hoverprice">
+                                    <span>$</span>17</p>
+                                <!-- PLUS -->
+                                <figure class="hoverplus">
+                                    <img src="assets/photos/fastfood/plus.png">
+                                </figure>
+                                <!-- HEART ICON-->
+                                <figure class="hovericons" style="margin-right: 1.5%">
+                                    <img src="assets/photos/fastfood/heart.png">
+                                </figure>
+                                <!-- SHOPING CART ICON -->
+                                <figure class="hovericons">
+                                    <img src="assets/photos/fastfood/cart.png">
+                                </figure>
+                                <!-- DAY DEAL END -->
+                            </div>
                     </figure>
                 </div>
             </div>

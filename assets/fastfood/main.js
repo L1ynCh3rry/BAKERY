@@ -8,6 +8,17 @@ $(document).ready(function() {
               $('#ffnavigation').removeClass('shrink');
             }
           });
+
+           /* NAVIGATION TOGGLE BUTTON */ 
+    $('#ffmenutoggle').click(function() {
+      $('#ffmenu').addClass('ffmenuactive');
+      $('#body').addClass('overflow');
+  });
+
+  $('#ffmenuclose').click(function() {
+      $('#ffmenu').removeClass('ffmenuactive');
+      $('#body').removeClass('overflow');
+  });
      
 
 });
