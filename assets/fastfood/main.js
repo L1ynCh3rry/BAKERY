@@ -19,6 +19,14 @@ $(document).ready(function() {
       $('#ffmenu').removeClass('ffmenuactive');
       $('#body').removeClass('overflow');
   });
-     
+  
+
+  /* FAST FOOD HEART CLICK */
+  $(function() {
+    $('.ffheart').click(function(){
+      $(this).attr('src',"assets/photos/fastfood/heartactive.png");
+    });
+  });
+
 
 });

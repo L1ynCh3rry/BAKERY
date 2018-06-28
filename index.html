@@ -2,28 +2,24 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Bakery">
     <meta name="keywords" content="Bakery">
     <meta name="author" content="CUBES">
-    <!-- TITLE -->
-    <title>Bakery</title>
+    <title>Fast Food</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
         crossorigin="anonymous">
+
     <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Pacifico&amp;subset=cyrillic,latin-ext" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&amp;subset=cyrillic,latin-ext" rel="stylesheet">
-
-
-
-
-
-    <!-- HOVER CSS 
-    <link rel="stylesheet" href="assets/hover-min.css"> -->
+    <!-- MONTSERRAT -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700,800,900&amp;subset=cyrillic,latin-ext" rel="stylesheet">
+    <!-- ROBOTO SLAB REGULAR -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
 
     <!-- SWIPER CSS-->
     <link rel="stylesheet" href="assets/swiper.min.css">
@@ -34,708 +30,440 @@
     <!-- STYLE CSS -->
     <link rel="stylesheet" type="text/css" href="assets/style.css" />
 
-    <!-- BAKERY SETTINGS -->
-    <link rel="stylesheet" type="text/css" href="assets/bakery/bakerysettings.css" />
+    <!-- FASTFOOD SETTINGS -->
+    <link rel="stylesheet" type="text/css" href="assets/fastfood/fastfoodsettings.css" />
 
     <!-- RESPONSIVE -->
     <link rel="stylesheet" type="text/css" href="assets/responsive.css" />
 </head>
 
-<body style=" padding-top: 40px;" id="body">
+<body id="body">
 
-    <!-- SEARCH BAR -->
-    <div class="mt-4" id="bakerysearch" style="position: fixed; width: 80vw; left: 10vw; z-index: 5; top: -120px; transition: 0.1s linear;">
-        <input type="text" placeholder="Search products">
-        <i class="fas fa-search" style="color: #fd8f0e; position: absolute; right: 40px; top: 10px;"></i>
-        <a href="#">
-            <i class="fas fa-times pt-2 fa-lg" style="color: #fd8f0e; position: absolute; right: 17px; top: 11%;" id="bakerysearchclose"></i>
-        </a>
-    </div>
-
-    <!-- HEADER -->
-
-    <div class="row justify-content-between no-gutters p-4 bakerynav" id="bakerynav" style="background-color: rgba(255, 255, 255, 0.94); position: fixed; top: 0; left: 0; width: 100%; max-height: 80px; z-index: 4">
-        <!-- LOGO -->
-        <div class="col-7 col-md-4">
-            <a href="#home">
-                <figure class="d-inline pr-2">
-                    <img src="assets/photos/bakery/logo.png">
-                </figure>
-                <h2 class="d-inline" style="color: #fd8f0e;">
-                    <strong>Bakery</strong>
-                </h2>
-            </a>
-        </div>
-        <div class="col-5 col-md-8">
-            <div class="row">
-                <!-- NAVIGATION -->
-                <div class="col-12 col-md-9 col-lg-10 text-lg-right">
-                    <menu id="bakerymenu" class="mt-0">
-                        <ul class="list-unstyled bakeryul" style="color: #7e7671;">
-                            <li>
-                                <a href="#home">Home</a>
-                            </li>
-                            <li>
-                                <a href="#club">Club</a>
-                            </li>
-                            <li>
-                                <a href="#recipes">Recipes</a>
-                            </li>
-                            <li>
-                                <a href="#pictures">Pictures</a>
-                            </li>
-                            <li>
-                                <a href="#magazine">Magazine</a>
-                            </li>
-                            <li>
-                                <a href="#blogs">Blogs</a>
-                            </li>
-                        </ul>
-                        <a href="#" id="bakerymenuclose">
-                            <i class="fas fa-times"></i>
-                        </a>
-                    </menu>
-                </div>
-                <!-- SEARCH AND SHOPING BASKET -->
-                <div class="col-12 col-md-3 col-lg-2 pt-3 bakeryss text-right pr-5">
-                    <!-- ANDROID MENU BUTTON -->
-                    <a href="#">
-                        <i class="fas fa-chevron-circle-down" id="bakerynavbutton" style="color: #fd8f0e"></i>
-                    </a>
-                    <span class="d-inline mx-1">.</span>
-                    <!-- search button -->
-                    <a href="#" id="bakerysearchtoggle" class="px-xl-2">
-                        <i class="fas fa-search fa-lg mx-1" style="color: #fd8f0e"></i>
-                    </a>
-                    <span class="d-inline mx-1">.</span>
-
-                    <div style="display: inline; position: relative;" class="px-xl-2">
-                        <!-- CART -->
-                        <a href="#">
-                            <img src="assets/photos/bakery/cart.png" style="width: 22px; height: 18px; margin-top: -7px;">
-                        </a>
-                        <!-- NUMBER OF ITEMS IN CART -->
-                        <p class="px-2">
-                            <strong>4</strong>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-    <!-- NAVIGATION END -->
-
-
-
-
-
-
-
-
-    <section id="home">
-        <!-- SWIPER BEGIN -->
-        <div class="swiper-container">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-
-                <!-- SLINDER 1 -->
-                <div class="swiper-slide" data-height="100" style="background: #fafafb url('assets/photos/bakery/topphoto.png') no-repeat right;">
-                    <div class="float-center">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-5 text-center" style="margin-top: 20%;">
-                                    <img src="assets/photos/bakery/breadicon.png" class="mb-2">
-                                    <h4 class="subtitle">- Bakery Goods -</h4>
-                                    <h3 class="bakerywide m-b-sm uc">
-                                        <strong>Bread products</strong>
-                                    </h3>
-                                    <p class="bakerycolor">There are many variations of passages</p>
-                                </div>
-                            </div>
-                            <!-- FRESH -->
-                            <figure style="position: absolute; top: 25%; right: 5%;">
-                                <img src="assets/photos/bakery/elipse.png">
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-                <!-- SLIDER 1 END -->
-
-                <!-- SLINDER 2 -->
-                <div class="swiper-slide" data-height="100" style="background: #fafafb url('assets/photos/bakery/topphoto.png') no-repeat right;">
-                    <div class="float-center">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-5 text-center" style="margin-top: 20%;">
-                                    <img src="assets/photos/bakery/breadicon.png" class="mb-2">
-                                    <h4 class="subtitle">- Bakery Goods -</h4>
-                                    <h3 class="bakerywide m-b-sm uc">
-                                        <strong>Bread products</strong>
-                                    </h3>
-                                    <p class="bakerycolor">There are many variations of passages</p>
-                                </div>
-                            </div>
-                            <!-- FRESH -->
-                            <figure style="position: absolute; top: 25%; right: 5%;">
-                                <img src="assets/photos/bakery/elipse.png">
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-                <!-- SLIDER 2 END -->
-
-                <!-- SLINDER 3 -->
-                <div class="swiper-slide" data-height="100" style="background: #fafafb url('assets/photos/bakery/topphoto.png') no-repeat right;">
-                    <div class="float-center">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-5 text-center" style="margin-top: 20%;">
-                                    <img src="assets/photos/bakery/breadicon.png" class="mb-2">
-                                    <h4 class="subtitle">- Bakery Goods -</h4>
-                                    <h3 class="bakerywide m-b-sm uc">
-                                        <strong>Bread products</strong>
-                                    </h3>
-                                    <p class="bakerycolor">There are many variations of passages</p>
-                                </div>
-                            </div>
-                            <!-- FRESH -->
-                            <figure style="position: absolute; top: 25%; right: 5%;">
-                                <img src="assets/photos/bakery/elipse.png">
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-                <!-- SLIDER 3 END -->
-
-                <!-- SLINDER 4 -->
-                <div class="swiper-slide" data-height="100" style="background: #fafafb url('assets/photos/bakery/topphoto.png') no-repeat right;">
-                    <div class="float-center">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-5 text-center" style="margin-top: 20%;">
-                                    <img src="assets/photos/bakery/breadicon.png" class="mb-2">
-                                    <h4 class="subtitle">- Bakery Goods -</h4>
-                                    <h3 class="bakerywide m-b-sm uc">
-                                        <strong>Bread products</strong>
-                                    </h3>
-                                    <p class="bakerycolor">There are many variations of passages</p>
-                                </div>
-                            </div>
-                            <!-- FRESH -->
-                            <figure style="position: absolute; top: 25%; right: 5%;">
-                                <img src="assets/photos/bakery/elipse.png">
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-                <!-- SLIDER 4 END -->
-
-
-
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div> -->
-
-            <!-- If we need scrollbar 
-                <div class="swiper-scrollbar"></div> -->
-        </div>
-        <!-- SWIPER ENDS -->
-    </section>
-
-
-
-
-
-
-
-    <!-- CLUB BEGIN -->
-    <section id="club">
-        <div class="row no-gutters bakerybanners">
-            <div class="col-12 col-lg-4">
-                <!-- BANNER 1 -->
-                <figure>
-                    <img src="assets/photos/bakery/banner1.jpg">
-                </figure>
-            </div>
-            <div class="col-12 col-lg-4" style="position: relative;">
-                <!-- BANNER 2 -->
-                <figure style="position: relative;">
-                    <img src="assets/photos/bakery/banner2.jpg">
-                    <div style="position: absolute; top: 10%; left: 10%;">
-                        <img class="mb-4" src="assets/photos/bakery/sale30.png" style="width: 90px; height: 90px;">
-                        <h3 class="mb-0 bakerywide" style="color: white;">DEAL OF THE DAY</h3>
-                        <p style="color: white;">There are many variations of passages</p>
-                        <h4 class="mb-4" style="color: #fd8f0e;">ONLY $17</h4>
-                        <a class="py-2 px-3 bakeryshopnow hvr-shutter-in-horizontal" href="#">SHOP NOW</a>
-                    </div>
-                </figure>
-                <div style="position: absolute; top: 49%; left: -20px; color: #395382; font-size: 28px; cursor: default">&#9664;</div>
-            </div>
-            <div class="col-12 col-lg-4 text-center banner3">
-                <!-- BANNER 3 -->
-                <img src="assets/photos/bakery/banner3.png" style="padding: 17px;">
-                <div class="p-5 banner3inside">
-                    <img src="assets/photos/bakery/logo.png" style="width: 70px; height: 50px;" class="mb-4">
-                    <h1 style="color: #3e2720">
-                        <strong>- BAKERY -</strong>
-                    </h1>
-                    <h4 class="bakerycolor mb-4">SINCE 1986</h4>
-                    <p class="mb-4">But the majority have suffered alteration in some form, by injected humour, or randomisCurabitur venenatis
-                        lorem a urna tempor...</p>
-                    <a href="#" class="bakerymore py-2 px-4 hvr-rectangle-out">
-                        <strong>MORE</strong>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- CLUB ENDS-->
-
-    <!-- RECIPES BEGIN -->
-    <section id="recipes">
-        <div class="row banner4 no-gutters text-center">
-            <div class="col-8 col-lg-4 m-auto recipesdiv">
-                <div style="margin-bottom: 50px; margin-top: 20%;">
-                    <h4 class="subtitle" style="color: #3e2720;">- Bakery Goods -</h4>
-                    <h2 style="color: #3e2720;" class="bakerywide mb-5">
-                        <strong>NEWEST PRODUCTS</strong>
-                    </h2>
-                </div>
-                <!-- RECIPE INSIDE DIV -->
-                <div class="recipe">
-                    <h4 class="bakerybreadtext mb-4 pb-4">
-                        <strong>BREAD TEXT </strong>
-                        <span style="color: #fd8f0e">
-                            <strong>$17</strong>
-                        </span>
-                    </h4>
-                    <p style="color: #3e2720;">
-                        <img src="assets/photos/bakery/recipeicon1.png" class="pr-4">But the majority</p>
-                    <p style="color: #3e2720;">
-                        <img src="assets/photos/bakery/recipeicon2.png" class="pr-4">Have suffered alteration</p>
-                    <p style="color: #3e2720;">
-                        <img src="assets/photos/bakery/recipeicon3.png" class="pr-4">Curabitur</p>
-                </div>
-                <a class="px-4 py-2 hvr-bounce-in mt-4" href="#">
-                    <strong>SHOP NOW</strong>
-                </a>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- RECIPES ENDS -->
-
-
-    <!-- FEATURED PRODUCTS BEGIN -->
-    <section id="pictures" style="padding-top: 100px">
-        <div class="row pl-4 no-gutters">
-            <div class="col-4 col-md-1 text-center">
-                <img src="assets/photos/bakery/bread.png">
-            </div>
-            <div class="col-8 col-md-11">
-                <h2 style="color: #3e2720; text-transform: uppercase;">
-                    <strong>Featured products</strong>
-                </h2>
-                <!-- FEATURED PRODUCTS IN LIST -->
-                <ul class="list-unstyled bakeryfeaturedlist">
-                    <li>
-                        <a href="#" class="bakerywide active">
-                            <strong>all</strong>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="bakerywide">
-                            <strong>breads</strong>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="bakerywide">
-                            <strong>rolls</strong>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="bakerywide">
-                            <strong>cookies</strong>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="bakerywide">
-                            <strong>cakes</strong>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="bakerywide">
-                            <strong>other</strong>
-                        </a>
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-        <div class="PSWIPER pt-5">
-            <div class="swiper-wrapper mt-4">
-                <!-- SWIPER PRODUCT -->
-                <div class="swiper-slide">
-                    <img src="assets/photos/bakery/product1.jpg">
-                    <h4 class="mt-2 ml-2">Breads &amp; Rolls</h4>
-                    <p class="mt-2 ml-2">$17</p>
-                </div>
-                <!-- SWIPER PRODUCT -->
-                <div class="swiper-slide">
-                    <img src="assets/photos/bakery/product2.png">
-                    <h4 class="mt-2 ml-2">Breads &amp; Rolls</h4>
-                    <p class="mt-2 ml-2">$17</p>
-                    <!-- SALE -->
-                    <figure class="sale">
-                        <img src="assets/photos/bakery/sale.png">
-                    </figure>
-                </div>
-                <!-- SWIPER PRODUCT -->
-                <div class="swiper-slide">
-                    <img src="assets/photos/bakery/product3.png">
-                    <h4 class="mt-2 ml-2">Breads &amp; Rolls</h4>
-                    <p class="mt-2 ml-2">$17</p>
-                </div>
-                <!-- SWIPER PRODUCT -->
-                <div class="swiper-slide">
-                    <img src="assets/photos/bakery/product4.jpg">
-                    <h4 class="mt-2 ml-2">Breads &amp; Rolls</h4>
-                    <p class="mt-2 ml-2">$17</p>
-                </div>
-                <!-- SWIPER PRODUCT -->
-                <div class="swiper-slide">
-                    <img src="assets/photos/bakery/product1.jpg">
-                    <h4 class="mt-2 ml-2">Breads &amp; Rolls</h4>
-                    <p class="mt-2 ml-2">$17</p>
-                    <!-- SALE -->
-                    <figure class="sale">
-                        <img src="assets/photos/bakery/sale.png">
-                    </figure>
-                </div>
-                <!-- SWIPER PRODUCT -->
-                <div class="swiper-slide">
-                    <img src="assets/photos/bakery/product2.png">
-                    <h4 class="mt-2 ml-2">Breads &amp; Rolls</h4>
-                    <p class="mt-2 ml-2">$17</p>
-                </div>
-                <!-- SWIPER PRODUCT -->
-                <div class="swiper-slide">
-                    <img src="assets/photos/bakery/product3.png">
-                    <h4 class="mt-2 ml-2">Breads &amp; Rolls</h4>
-                    <p class="mt-2 ml-2">$17</p>
-                </div>
-                <!-- SWIPER PRODUCT -->
-                <div class="swiper-slide">
-                    <img src="assets/photos/bakery/product4.jpg">
-                    <h4 class="mt-2 ml-2">Breads &amp; Rolls</h4>
-                    <p class="mt-2 ml-2">$17</p>
-                </div>
-                <!-- SWIPER PRODUCT -->
-                <div class="swiper-slide">
-                    <img src="assets/photos/bakery/product1.jpg">
-                    <h4 class="mt-2 ml-2">Breads &amp; Rolls</h4>
-                    <p class="mt-2 ml-2">$17</p>
-                </div>
-                <!-- SWIPER PRODUCT -->
-                <div class="swiper-slide">
-                    <img src="assets/photos/bakery/product2.png">
-                    <h4 class="mt-2 ml-2">Breads &amp; Rolls</h4>
-                    <p class="mt-2 ml-2">$17</p>
-                    <!-- SALE -->
-                    <figure class="sale">
-                        <img src="assets/photos/bakery/sale.png">
-                    </figure>
-                </div>
-                <!-- SWIPER PRODUCT -->
-                <div class="swiper-slide">
-                    <img src="assets/photos/bakery/product4.jpg">
-                    <h4 class="mt-2 ml-2">Breads &amp; Rolls</h4>
-                    <p class="mt-2 ml-2">$17</p>
-                    <!-- SALE -->
-                    <figure class="sale">
-                        <img src="assets/photos/bakery/sale.png">
-                    </figure>
-                </div>
-                <!-- SWIPER PRODUCT -->
-                <div class="swiper-slide">
-                    <img src="assets/photos/bakery/product1.jpg">
-                    <h4 class="mt-2 ml-2">Breads &amp; Rolls</h4>
-                    <p class="mt-2 ml-2">$17</p>
-                </div>
-                <!-- SWIPER PRODUCT -->
-                <div class="swiper-slide">
-                    <img src="assets/photos/bakery/product2.png">
-                    <h4 class="mt-2 ml-2">Breads &amp; Rolls</h4>
-                    <p class="mt-2 ml-2">$17</p>
-                </div>
-                <!-- SWIPER PRODUCT -->
-                <div class="swiper-slide">
-                    <img src="assets/photos/bakery/product4.jpg">
-                    <h4 class="mt-2 ml-2">Breads &amp; Rolls</h4>
-                    <p class="mt-2 ml-2">$17</p>
-                </div>
-                <!-- SWIPER PRODUCT -->
-                <div class="swiper-slide">
-                    <img src="assets/photos/bakery/product1.jpg">
-                    <h4 class="mt-2 ml-2">Breads &amp; Rolls</h4>
-                    <p class="mt-2 ml-2">$17</p>
-                    <!-- SALE -->
-                    <figure class="sale">
-                        <img src="assets/photos/bakery/sale.png">
-                    </figure>
-                </div>
-                <!-- SWIPER PRODUCT -->
-                <div class="swiper-slide">
-                    <img src="assets/photos/bakery/product2.png">
-                    <h4 class="mt-2 ml-2">Breads &amp; Rolls</h4>
-                    <p class="mt-2 ml-2">$17</p>
-                </div>
-            </div>
-            <!-- PAGINATION -->
-            <div class="bakeryswiper-pagination"></div>
-            <!-- LEFT & RIGHT BUTTONS -->
-            <div class="bakeryswiper-button-prev">
-                <i class="fas fa-arrow-left"></i>
-            </div>
-            <div class="bakeryswiper-button-next">
-                <i class="fas fa-arrow-right"></i>
-            </div>
-        </div>
-
-
-    </section>
-    <!-- FEATURED PRODUCTS END -->
-
-
-    <!-- Magazine BEGIN -->
-    <section id="magazine">
+    <!-- NAVIGATION -->
+    <section id="ffnavigation">
         <div class="row no-gutters">
-            <!-- BANNER 4 BEGIN-->
-            <div class="col-12">
-                <div class="bakerymagazine1">
-                    <div class="text-left float-right bakerymt">
-                        <img src="assets/photos/bakery/icon2.png" class="ml-4 mb-4">
-                        <h2>
-                            <strong>- BAKERY TEXT -</strong>
-                        </h2>
-                        <p>
-                            But the majority have suffered alteration in some form, by injected humour, or randomisCurabitur venenatis lorem a urna tempor...
-                        </p>
-                        <P>
-                            Suffered alteration in some form , by injected humour, or randomis Curabitur venenatis lorem a rna tempor...
-                        </P>
-                        <!-- BANNER 4 BUTTON -->
-                        <a href="#" class="magazinemore py-2 px-4 hvr-radial-in">
-                            <strong>MORE</strong>
-                        </a>
-                    </div>
-                    <figure class="magazinef1 magazinef">
-                        <img src="assets/photos/bakery/elipse.png" class="elipses">
-                    </figure>
-                </div>
+            <div class="col-8 col-md-3 text-right">
+                <!-- LOGO -->
+                <a href="#" style="color: #e2dad1;" id="fflogo" class="mr-5">Fast<!--
+                --><span style="color: #f48e02">Food</span></a>
             </div>
-            <!-- BANNER 4 ENDS-->
-            <!-- BANNER 5 BEGIN -->
-            <div class="col-12">
-                <div class="bakerymagazine2">
-                    <div class="text-left float-left bakerymt">
-                        <img src="assets/photos/bakery/icon2.png" class="ml-4 mb-4">
-                        <h2>
-                            <strong>- BAKERY TEXT -</strong>
-                        </h2>
-                        <p>
-                            But the majority have suffered alteration in some form, by injected humour, or randomisCurabitur venenatis lorem a urna tempor...
-                        </p>
-                        <P>
-                            Suffered alteration in some form , by injected humour, or randomis Curabitur venenatis lorem a rna tempor...
-                        </P>
-                        <!-- BANNER 5 BUTTON -->
-                        <a href="#" class="magazinemore py-2 px-4 hvr-radial-in">
-                            <strong>MORE</strong>
-                        </a>
-                    </div>
-                    <figure class="magazinef2 magazinef">
-                        <img src="assets/photos/bakery/elipse2.png" class="elipses">
-                    </figure>
-                </div>
+            <div class="col-4 col-md-9">
+                <!-- MENU BEGIN -->
+                <menu id="ffmenu" class="mt-0">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="active">about</a>
+                        </li>
+                        <li>
+                            <a href="#topoffers">products</a>
+                        </li>
+                        <li>
+                            <a href="#">blog</a>
+                        </li>
+                        <li>
+                            <a href="#">shop</a>
+                        </li>
+                        <li>
+                            <a href="#">cusine</a>
+                        </li>
+                        <li>
+                            <a href="#">gallery</a>
+                        </li>
+                        <li>
+                            <a href="#">contact</a>
+                        </li>
+                        <li>
+                            <a href="#">my account</a>
+                        </li>
+                        <li>
+                            <a href="#">cart
+                                <span>3($50)</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p style="position: absolute; bottom: 0; left: 50%;" id="ffmenuclose"><i class="fas fa-times" style="color: #fff;"></i></p>
+                </menu>
+                <i class="fas fa-caret-square-down fa-2x" id="ffmenutoggle"></i>
+                <!-- MENU ENDS -->
             </div>
-            <!-- BANNER 5 ENDS -->
         </div>
     </section>
-    <!-- Magazine end -->
 
 
-
-    <!-- Blog Begin-->
-    <section id="blog">
-        <div class="row no-gutters bakeryblog">
-            <div class="col-12 col-lg-6 px-4 banner4">
+    <!-- FIND YOUR DISHES SECTION -->
+    <section id="fffyd">
+        <div class="row no-gutters text-center">
+            <div class="col" style="position: relative;">
+                <!-- BACKGROUND PICTURE -->
+                <img src="assets/photos/fastfood/hero-01.jpg" style="width: 100%;">
+                <!-- ABSOLUTE DIV -->
+                <div class="text-center topbannerdiv">
+                    <h1>Find Your Dishes</h1>
+                    <h3>highly customizable. ease to use and fully responsive</h3>
+                    <div class="fyd">
+                        <!-- DAY DEAL -->
+                        <h2 class="mb-1">
+                            <strong>DAY DEAL</strong>
+                        </h2>
+                        <p class="mb-1">
+                            <strong>australian cuisine</strong>
+                        </p>
+                        <!-- PRICE -->
+                        <p class="mb-1 ffprice roboto">
+                            <span>$</span>28</p>
+                        <!-- PLUS -->
+                        <figure class="fydplus">
+                            <img src="assets/photos/fastfood/plus.png">
+                        </figure>
+                        <!-- HEART ICON-->
+                        <figure class="fydicons" style="margin-right: 1.5%">
+                            <img src="assets/photos/fastfood/heart.png" class="ffheart">
+                        </figure>
+                        <!-- SHOPING CART ICON -->
+                        <figure class="fydicons">
+                            <img src="assets/photos/fastfood/cart.png">
+                        </figure>
+                        <!-- DAY DEAL END -->
+                    </div>
+                </div>
+                <!-- ABSOLUTE DIV ENDS-->
             </div>
-            <div class="col-12 col-lg-6 px-4 banner5">
+        </div>
+    </section>
+    <!-- FIND YOUR DIHES SECTION END -->
+
+
+    <!-- CENTRAL CONTAINER-->
+    <section id="topoffers">
+        <div id="ffcontainer" class="text-center px-md-4 px-lg-5 py-4">
+            <!-- TOP OFFERS TITLE -->
+            <h3 style="color: #54514e; font-weight: 700;">- Top Offers -</h3>
+
+
+
+
+            <!-- TOP OFFERS DIV -->
+            <div class="row  fftopoffers pt-3 px-2 px-md-4 mb-5">
+
+                <!-- TOP OFFER 1 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <figure style="position: relative;">
+                        <!-- OFFER PICTURE -->
+                        <img src="assets/photos/fastfood/topoffer1.jpg">
+                        <h4 class="mb-0">Popular england tea</h4>
+                        <a href class="toinfo">+ info</a>
+                        <!-- HOVER -->
+                            <div class="topofferhover">
+                                <!-- PRICE -->
+                                <p class="mb-1 hoverprice roboto">
+                                    <span>$</span>17
+                                </p>
+                                <!-- PLUS -->
+                                <figure class="hoverplus">
+                                    <a href="#"><img src="assets/photos/fastfood/plus.png"></a>
+                                </figure>
+                                <!-- HEART ICON-->
+                                <figure class="hovericons" style="margin-right: 1.5%">
+                                    <img src="assets/photos/fastfood/heart.png" class="ffheart">
+                                </figure>
+                                <!-- SHOPING CART ICON -->
+                                <figure class="hovericons">
+                                    <a href="#"><img src="assets/photos/fastfood/cart.png"></a>
+                                </figure>
+                            </div>
+                    </figure>
+                </div>
+
+                <!-- TOP OFFER 2 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                        <figure style="position: relative;">
+                                <!-- OFFER PICTURE -->
+                            <img src="assets/photos/fastfood/topoffer2.jpg">
+                            <h4 class="mb-0">Hot dogs</h4>
+                            <a href class="toinfo">+ info</a>
+                            <!-- HOVER -->
+                                <div class="topofferhover">
+                                    <!-- PRICE -->
+                                    <p class="mb-1 hoverprice roboto">
+                                        <span>$</span>15
+                                    </p>
+                                    <!-- PLUS -->
+                                    <figure class="hoverplus">
+                                        <a href="#"><img src="assets/photos/fastfood/plus.png"></a>
+                                    </figure>
+                                    <!-- HEART ICON-->
+                                    <figure class="hovericons" style="margin-right: 1.5%">
+                                        <img src="assets/photos/fastfood/heart.png" class="ffheart">
+                                    </figure>
+                                    <!-- SHOPING CART ICON -->
+                                    <figure class="hovericons">
+                                        <a href="#"><img src="assets/photos/fastfood/cart.png"></a>
+                                    </figure>
+                                </div>
+                        </figure>
+                </div>
+
+                    <!-- TOP OFFER 3 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                        <figure style="position: relative;">
+                                <!-- OFFER PICTURE -->
+                            <img src="assets/photos/fastfood/topoffer3.jpg">
+                            <h4 class="mb-0">American tacos</h4>
+                            <a href class="toinfo">+ info</a>
+                            <!-- HOVER -->
+                                <div class="topofferhover">
+                                    <!-- PRICE -->
+                                    <p class="mb-1 hoverprice roboto">
+                                        <span>$</span>25
+                                    </p>
+                                    <!-- PLUS -->
+                                    <figure class="hoverplus">
+                                        <a href="#"><img src="assets/photos/fastfood/plus.png"></a>
+                                    </figure>
+                                    <!-- HEART ICON-->
+                                    <figure class="hovericons" style="margin-right: 1.5%">
+                                        <img src="assets/photos/fastfood/heart.png" class="ffheart">
+                                    </figure>
+                                    <!-- SHOPING CART ICON -->
+                                    <figure class="hovericons">
+                                        <a href="#"><img src="assets/photos/fastfood/cart.png"></a>
+                                    </figure>
+                                </div>
+                        </figure>
+                </div>
+
+                    <!-- TOP OFFER 4 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                        <figure style="position: relative;">
+                                <!-- OFFER PICTURE -->
+                            <img src="assets/photos/fastfood/topoffer4.jpg">
+                            <h4 class="mb-0">Big Mac and coca cola</h4>
+                            <a href class="toinfo">+ info</a>
+                            <!-- HOVER -->
+                                <div class="topofferhover">
+                                    <!-- PRICE -->
+                                    <p class="mb-1 hoverprice roboto">
+                                        <span>$</span>12
+                                    </p>
+                                    <!-- PLUS -->
+                                    <figure class="hoverplus">
+                                        <a href="#"><img src="assets/photos/fastfood/plus.png"></a>
+                                    </figure>
+                                    <!-- HEART ICON-->
+                                    <figure class="hovericons" style="margin-right: 1.5%">
+                                        <img src="assets/photos/fastfood/heart.png" class="ffheart">
+                                    </figure>
+                                    <!-- SHOPING CART ICON -->
+                                    <figure class="hovericons">
+                                        <a href="#"><img src="assets/photos/fastfood/cart.png"></a>
+                                    </figure>
+                                </div>
+                        </figure>
+                </div>
+
+                    <!-- TOP OFFERS END-->
+
+            </div>
+            <!-- TOP OFFERS DIV END-->
+
+
+            <!-- SEPARATING LINE-->
+            <div class="mx-4 headerlinesdiv">
+                <!-- TODAYS SPECIAL HEADER -->
+                <h3 class="headerlines">Today's Specials</h3>
+            </div>
+
+
+
+
+
+            <!-- TODAYS SPECIALS DIV -->
+            <div class="row ffts my-5 px-2 px-md-4 text-center">
+
+                <!-- SPECIAL 1 -->
+                <div class="col">
+                    <figure>
+                        <img src="assets/photos/fastfood/ts4.png">
+                    </figure>
+                    <a href="#">sandwiches</a>
+                </div>
+
+                <!-- SPECIAL 2 -->
+                <div class="col">
+                        <figure>
+                            <img src="assets/photos/fastfood/ts2.png">
+                        </figure>
+                    <a href="#">hamburgers</a>
+                </div>
+
+                <!-- SPECIAL 3 -->
+                <div class="col">
+                        <figure>
+                            <img src="assets/photos/fastfood/ts3.png">
+                        </figure>
+                    <a href="#">tacos</a>
+                </div>
+
+                <!-- SPECIAL 4 -->
+                <div class="col">
+                        <figure>
+                            <img src="assets/photos/fastfood/ts4.png">
+                        </figure>
+                    <a href="#">rolls</a>
+                </div>
+
+                <!-- SPECIAL 5 -->
+                <div class="col">
+                        <figure>
+                            <img src="assets/photos/fastfood/ts5.png">
+                        </figure>
+                    <a href="#">french fries</a>
+                </div>
+
+            </div>
+            <!-- TODAYS SPECIALS DIV END -->
+
+
+            <!-- SEPARATING LINE -->
+            <div class="mx-4 headerlinesdiv"></div>
+
+            
+            <!-- HIGHLY CUSTOMIZABLE -->
+            <section>
+                <div class="row px-4" style="margin-top: 120px;">
+                        <!-- LEFT SIDE -->
+                        <div class="col-12 col-md-6 text-left">
+                            <h3 style="color: #54514e; font-weight: 800">Highly Customizable</h3>
+                            <p style="color: #54514e; font-weight: 600">Easy to use and fully responsive</p>
+                            
+                            <div class="row mt-4">
+        
+                                <!-- PART 1 -->
+                                <div class="col-6 pb-5">
+                                    <p style="color: #f48e02; font-weight: 600">Highly customizable</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                </div>
+        
+                                <!-- PART 2 -->
+                                <div class="col-6 pb-5">
+                                    <p style="color: #f48e02; font-weight: 600">Endless Possibilities</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                </div>
+        
+                                <!-- PART 3 -->
+                                <div class="col-6 pb-5">
+                                    <p style="color: #f48e02; font-weight: 600">Fully responsive</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquatempor incididunt ut labore et dolore magna aliqua</p>
+                                </div>
+        
+                                <!-- PART 4 -->
+                                <div class="col-6 pb-5">
+                                    <p style="color: #f48e02; font-weight: 600">OpenCart premium theme</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquatempor incididunt ut labore et dolore magna aliqua</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- RIGHT SIDE-->
+                        <div class="col-12 col-md-6">
+                            <figure style="position: relative;">
+                                <img src="assets/photos/fastfood/banner.jpg" style="width: 100%;height: 100%;">
+
+
+
+
+                                <!-- HOVER LAST PICTURE -->
+                                <div class="newhover">
+                                        <!-- DAY DEAL -->
+                                        <h2 class="mb-1 roboto">
+                                            <strong>NEW</strong>
+                                        </h2>
+                                        <p class="mb-1">
+                                            <strong>spices</strong>
+                                        </p>
+                                        <!-- PRICE -->
+                                        <p class="mb-1 nhprice roboto" style="position: relative;">
+                                            <span>$</span>23
+                                            <span style="position: absolute; top: 5px; left: 10px; color: rgba(200, 200, 200, 0.8); font-weight: 600;">from</span>
+                                        </p>
+                                        <!-- PLUS -->
+                                        <figure class="nhplus">
+                                            <img src="assets/photos/fastfood/plus.png">
+                                        </figure>
+                                        <!-- HEART ICON-->
+                                        <figure class="nhicons" style="margin-right: 1.5%">
+                                            <img src="assets/photos/fastfood/heart.png" class="ffheart">
+                                        </figure>
+                                        <!-- SHOPING CART ICON -->
+                                        <figure class="nhicons">
+                                            <img src="assets/photos/fastfood/cart.png">
+                                        </figure>
+                                        <!-- DAY DEAL END -->
+                                    </div>
+
+
+
+
+
+                            </figure>
+                        </div>
+                    </div>
+            </section>
+
+
+
+            <!-- SEPARATING LINE -->
+            <div class="mx-4 headerlinesdiv"></div>
+
+
+            <!-- MAKE AN ORDER -->
+            <section id="mao">
                 <div class="text-center">
-                    <!-- BLOG -->
-                    <img src="assets/photos/bakery/banner5icon.png" class="mb-3">
-                    <h2 class="mb-3">
-                        <strong>upcoming blog</strong>
-                    </h2>
-                    <span style="width: 25%;"></span>
-                    <p class="blogdate mt-3" style="color: #fd8f0e; text-transform: uppercase;">
-                        <strong>14 may 2016</strong>
-                    </p>
-                    <p class="blogtext mb-4" style="color: white;">Breads &amp; Rolls text Curabitur venetis lorem u urna tempor</p>
-                    <span style="width: 20%;"></span>
-                    <p class="blogdate mt-3" style="color: #fd8f0e; text-transform: uppercase;">
-                        <strong>14 may 2016</strong>
-                    </p>
-                    <p class="blogtext mb-4" style="color: white;">Breads &amp; Rolls text Curabitur venetis lorem u</p>
-                    <span style="width: 20%;"></span>
-                    <!-- BLOG BUTTON -->
-                    <a href="#" class="color-white py-2 mt-5 hvr-shutter-out-vertical">
-                        <strong>ALL</strong>
-                    </a>
+                    <h1>Make an Order</h1>
+                    <p>Best place dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                    <form action="" method="GET">
+                        <div class="row justify-content-around">
+                            <div class="col-12 col-md-4">
+                                <label>Name:</label>
+                                <input type="text">
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <label>Phone no.:</label>
+                                <input type="number" class="lb">
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <label>E-mail:</label>
+                                <input type="email" class="lb">
+                            </div>
+                            <div class="col-12 col-md-12">
+                                <textarea placeholder="Type your order ..."></textarea>
+                            </div>
+                        </div>
+                        <input type="submit" value="Place Order" class="po">
+                    </form>
+                    <p>Opening hour is 7:00 am - 11:00 pm every day on week</p>
                 </div>
+            </section>
+
+
+            
+
+
+
+
             </div>
+
+
+
+
         </div>
     </section>
-    <!-- Blog Ends -->
+    <!-- CENTRAL CONTAINER END -->
 
-    <!-- FOOTER BEGIN -->
-    <footer>
-        <div class="row no-gutters">
-            <div class="col px-5">
-                <!-- ABOUT US -->
-                <h4>
-                    <strong>about us</strong>
-                </h4>
-                <p>Studybees mediated tutoring by students for students - and especially for your university or college.</p>
-                <a href="#">More</a>
-            </div>
-            <div class="col px-5">
-                <!-- INFO -->
-                <h4>
-                    <strong>more info</strong>
-                </h4>
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#">products</a>
-                    </li>
-                    <li>
-                        <a href="#">some text</a>
-                    </li>
-                    <li>
-                        <a href="#">lorem ipsum</a>
-                    </li>
-                    <li>
-                        <a href="#">representatives</a>
-                    </li>
-                    <li>
-                        <a href="#">press</a>
-                    </li>
-                    <li>
-                        <a href="#">partner</a>
-                    </li>
-                    <li>
-                        <a href="#">faq</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col px-5">
-                <!-- INSTAGRAM -->
-                <h4>
-                    <strong>instagram</strong>
-                </h4>
-                <div class="row no-gutters pt-1">
-                    <div class="col-6 p-2">
-                        <img src="assets/photos/bakery/inst1.jpg">
-                    </div>
-                    <div class="col-6 p-2">
-                        <img src="assets/photos/bakery/inst2.jpg">
-                    </div>
-                    <div class="col-6 p-2">
-                        <img src="assets/photos/bakery/inst3.jpg">
-                    </div>
-                    <div class="col-6 p-2">
-                        <img src="assets/photos/bakery/inst4.jpg">
-                    </div>
-                </div>
-            </div>
-            <div class="col px-5">
-                <!-- CONTACT -->
-                <h4>
-                    <strong>CONTACT</strong>
-                </h4>
-                <div class="row no-gutters pt-1 pb-5">
-                    <div class="col-2">
-                        <img src="assets/photos/bakery/footercontact1.png" style="width: 23px; height: 30px;">
-                    </div>
-                    <div class="col-10">
-                        <p class="mb-0">Altrottstr. 31</p>
-                        <p>69190 Walldorf</p>
-                    </div>
-                    <div class="col-2">
-                        <img src="assets/photos/bakery/footercontact2.png" style="width: 30px; height: 20px;">
-                    </div>
-                    <div class="col-10">
-                        <p>support@stydybees.de</p>
-                    </div>
-                </div>
-                <!-- WORKING TIME -->
-                <h4>
-                    <strong>working time</strong>
-                </h4>
-                <p>Mon to Fri:
-                    <span>08 am- 08 pm</span>
-                </p>
-                <p>Sat to Sun:
-                    <span>10 am- 06 pm</span>
-                </p>
-            </div>
-            <div class="col px-5">
-                <!-- SUBSCRIBE -->
-                <h4>
-                    <strong>subscribe to our news</strong>
-                </h4>
-                <p>Sign up for our newsletter and get the latest news.</p>
-                <form style="position: relative;">
-                    <input type="text" placeholder="email@example.com" class="mb-5 input">
-                    <input type="submit" value="SEND" class="send">
-                </form>
-                <!-- FOLLOW US -->
-                <h4>
-                    <strong>follow us</strong>
-                </h4>
-                <a href="#" style="display: inline-block; text-transform: uppercase;" class="mr-2">
-                    <strong>facebook</strong>
-                </a>
-                <a href="#" style="display: inline-block; text-transform: uppercase;" class="mr-2">
-                    <strong>twitter</strong>
-                </a>
-                <a href="#" style="display: inline-block; text-transform: uppercase;" class="mr-2">
-                    <strong>instagram</strong>
-                </a>
-            </div>
-            <div class="col-12 text-center">
-                <!-- COPYRIGHT -->
-                <figure class="logo mb-2">
-                    <img src="assets/photos/bakery/logo.png">
-                </figure>
-                <h2 class="mb-3">
-                    <strong>Bakery</strong>
-                </h2>
-                <p>&copy; 2014 - 2015 | Terms and Conditions | Privacy Policy | Imprint</p>
-            </div>
-        </div>
-    </footer>
-    <!-- FOOTER END -->
+
+
+
+
 
 
     <!-- JQUERY -->
@@ -745,10 +473,10 @@
         crossorigin="anonymous"></script>
     <!-- BOOTSTRAP -->
     <script src="assets/bootstrap.min.js" type="text/javascript"></script>
-    <!-- MAIN JS-->
-    <script src="assets/bakery/main.js" type="text/javascript"></script>
+    <!-- MAIN JS -->
+    <script src="assets/fastfood/main.js" type="text/javascript"></script>
 
-    <!-- SWIPER-->
+    <!-- SWIPER JS-->
     <script src="assets/swiper.min.js"></script>
 </body>
 
