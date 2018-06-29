@@ -138,9 +138,7 @@ img{
     background-color: #fff;
     margin-top: -20px;
     position: relative;
-}
-#container .fftopoffers {
-    
+    z-index: 2;
 }
 .fftopoffers figure h4{
     color: #4a443f;
@@ -342,3 +340,59 @@ img{
     width: auto;
     cursor: pointer;
 }
+
+/* FOOTER */
+#ffooter{
+    position: relative;
+    z-index: 1;
+}
+#ffooter .ffooter{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding: 80px 120px 120px;
+}
+#ffooter img{
+    width: 100%;
+}
+#ffooter h3{
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+#ffooter a,
+#ffooter p{
+    color: #c2c1c1;
+    display: block;
+    margin-bottom: 10px;
+}
+#ffooter .number{
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+#ffooter ul li{
+    float: left;
+    padding: 0 15px;
+}
+#ffooter ul li a{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+#ffooter ul li a:hover{
+    color: #af5502;
+}
+#ffooter h2{
+    color: #fff;
+    display: block;
+}
+#ffooter ul.ffsocial{
+    height: 50px;
+    margin-bottom: 50px;
+}
+#ffooter ul.ffsocial li{
+
+}
+
