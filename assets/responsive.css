@@ -2,7 +2,7 @@
 
 }
 
-@media(min-width:576px) {
+@media(min-width:576px) {   /*             576              */
     .bakeryfeaturedlist li a{
         font-size: 10px;
     }
@@ -25,9 +25,12 @@
     .banner3inside{
         margin-top: 20%;
     }
+    #ffooter .ffooter{
+        padding: 90px 20px 50px;
+    }
 }
 
-@media(min-width:768px) {
+@media(min-width:768px) {   /*             768            */
 #bakerymenu{
     float: right;
     position: static;
@@ -116,12 +119,15 @@
     #ffmenutoggle{
         display: none;
     }
+    #ffnavigation ul li a{
+        letter-spacing: 1px;
+    }
 
 
 }
 
 
-@media(min-width:992px) {
+@media(min-width:992px) {  /*        992          */
     #bakerymenu li{
         display: inline;
         padding: 0 10px;
@@ -166,14 +172,23 @@
     FAST FOOD
     */
     #ffnavigation ul li a{
-        font-size: 12px;
+        font-size: 8px;
+        letter-spacing: 2px;
     }
     #ffnavigation ul li{
         padding: 0 10px;
     }
+    #ffooter .ffooter{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        padding: 90px 180px 50px;
+    }
 }
 
-@media(min-width:1200px) {
+@media(min-width:1200px) {    /*            1200            */
     .magazinef1{
         top: 17%; 
         left: 33%;
@@ -192,15 +207,22 @@
     .recipe h4{
         font-size: 20px;
     }
+    /* 
+    FAST FOOD 
+    */
     #ffnavigation ul li a{
-        font-size: 12px;
+        font-size: 10px;
+        letter-spacing: 2px;
     }
     #ffnavigation ul li{
         padding: 0 15px;
     }
+    #ffooter .ffooter{
+        padding: 90px 240px 50px;
+    }
 }
 
-@media(min-width:1400px) {
+@media(min-width:1400px) {    /*          1400 CUSTOM            */
     .bakerymagazine1 .bakerymt,
     .bakerymagazine2 .bakerymt{
         width: 20%;
@@ -223,5 +245,20 @@
     }
     .recipe h4{
         font-size: 24px;
+    }
+    /* 
+    FAST FOOD 
+    */
+    #ffnavigation ul li a{
+        font-size: 11px;
+        letter-spacing: 4px;
+    }
+    #ffooter .ffooter{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        padding: 90px 340px 50px;
     }
 }

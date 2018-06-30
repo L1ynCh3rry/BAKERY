@@ -30,7 +30,6 @@ img{
     font-weight: 500;
     border-bottom: 2px solid transparent;
     padding-bottom: 4px;
-    letter-spacing: 5px;
 }
 #ffnavigation ul li a:hover{
     border-bottom: 2px solid #df8307;
@@ -205,8 +204,8 @@ img{
     font-size: 16px;
 }
 .topofferhover figure img{
-    width: 25px;
-    height: 24px;
+    width: 20px;
+    height: 18px;
 }
 
 /* TODAYS SPECIALS */
@@ -340,6 +339,9 @@ img{
     width: auto;
     cursor: pointer;
 }
+#mao input.po:hover{
+    box-shadow: -2px 2px 5px black;
+}
 
 /* FOOTER */
 #ffooter{
@@ -352,47 +354,63 @@ img{
     height: 100%;
     left: 0;
     top: 0;
-    padding: 80px 120px 120px;
-}
-#ffooter img{
-    width: 100%;
+    padding: 90px 5px 50px;
 }
 #ffooter h3{
     color: #fff;
     text-transform: uppercase;
     margin-bottom: 20px;
+    font-size: 18px;
 }
 #ffooter a,
 #ffooter p{
-    color: #c2c1c1;
+    color: #9d9b9a;
     display: block;
     margin-bottom: 10px;
+}
+#ffooter a:hover,
+#ffooter p:hover{
+    color: #cecece;
 }
 #ffooter .number{
     font-size: 20px;
     font-family: 'Raleway', sans-serif;
 }
 #ffooter ul li{
-    float: left;
+    float: none;
+    display: inline-block;
     padding: 0 15px;
 }
 #ffooter ul li a{
-    color: #fff;
+    color: #9d9b9a;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
-#ffooter ul li a:hover{
+#ffooter ul li a:hover,
+#ffooter ul li a.active{
     color: #af5502;
 }
 #ffooter h2{
     color: #fff;
-    display: block;
 }
 #ffooter ul.ffsocial{
     height: 50px;
-    margin-bottom: 50px;
+    width: 100%;
+    text-align: center;
 }
 #ffooter ul.ffsocial li{
 
 }
+#ffooter img{
+    height: 698px!important;
+    min-width: 100%!important;
+    width: auto;
+}
+#ffooter .ffsocial img{
+    min-width: auto;
+    width: auto!important;
+    height: auto!important;
+}
+
+
 
