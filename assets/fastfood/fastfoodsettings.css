@@ -73,11 +73,12 @@ img{
 .topbannerdiv {
     position: absolute; 
     top: 20%; 
-    min-width: 100%;
-    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    left: 0;
 }
 #fffyd h1{
-    font-size: 64px;
+    font-size: 24px;
     font-weight: 900;
     color: #fff;
 }
@@ -176,7 +177,6 @@ img{
 .topofferhover .hoverprice{
     background: #f0f0ec;
     color: #4b4844;
-    padding: 15px 0;
     float: left;
     display: inline-block;
 }
@@ -196,7 +196,6 @@ img{
 }
 .topofferhover .hoverprice{
     height: 50%;
-    font-size: 54px;
     margin-right: 1.5%;
 }
 .topofferhover .hoverprice span{
@@ -207,7 +206,12 @@ img{
     width: 20px;
     height: 18px;
 }
-
+.topofferhover  .fftopoffershover{
+    padding: 10px 0;
+}
+.topofferhover  p.fftopoffershover{
+    font-size: 34px;
+}
 /* TODAYS SPECIALS */
 .headerlinesdiv{
     border-bottom: 2px solid rgba(223, 218, 210, 0.5);

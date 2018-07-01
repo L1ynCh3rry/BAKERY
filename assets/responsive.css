@@ -28,6 +28,9 @@
     #ffooter .ffooter{
         padding: 90px 20px 50px;
     }
+    #fffyd h1{
+        font-size: 44px;
+    }
 }
 
 @media(min-width:768px) {   /*             768            */
@@ -121,6 +124,9 @@
     }
     #ffnavigation ul li a{
         letter-spacing: 1px;
+    }
+    #fffyd h1{
+        font-size: 54px;
     }
 
 
@@ -219,6 +225,9 @@
     }
     #ffooter .ffooter{
         padding: 90px 240px 50px;
+    }
+    #fffyd h1{
+        font-size: 64px;
     }
 }
 
