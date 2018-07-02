@@ -54,13 +54,13 @@
                 <menu id="ffmenu" class="mt-0">
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#" class="active">about</a>
+                            <a href="#fffyd" class="active">about</a>
                         </li>
                         <li>
                             <a href="#topoffers">products</a>
                         </li>
                         <li>
-                            <a href="#">blog</a>
+                            <a href="#blog">blog</a>
                         </li>
                         <li>
                             <a href="#">shop</a>
@@ -72,19 +72,21 @@
                             <a href="#">gallery</a>
                         </li>
                         <li>
-                            <a href="#">contact</a>
+                            <a href="#mao">contact</a>
                         </li>
                         <li>
                             <a href="#">my account</a>
                         </li>
                         <li>
                             <a href="#">cart
-                                <span>3($50)</span>
+                                <span class="roboto">3($50)</span>
                             </a>
                         </li>
                     </ul>
+                    <!-- CLOSE BUTTON FOR MENU -->
                     <p style="position: absolute; bottom: 0; left: 50%;" id="ffmenuclose"><i class="fas fa-times" style="color: #fff;"></i></p>
                 </menu>
+                <!-- TOGGLE BUTTON FOR MENU -->
                 <i class="fas fa-caret-square-down fa-2x" id="ffmenutoggle"></i>
                 <!-- MENU ENDS -->
             </div>
@@ -95,8 +97,6 @@
     <!-- FIND YOUR DISHES SECTION -->
     <section id="fffyd">
         <div class="text-center" style="position: relative;">
-                <!-- BACKGROUND PICTURE -->
-                <img src="assets/photos/fastfood/hero-01.jpg" style="width: 1700px; min-width: 100%;  height: 905px;">
                 <!-- ABSOLUTE DIV -->
                 <div class="text-center topbannerdiv">
                     <h1>Find Your Dishes</h1>
@@ -143,7 +143,7 @@
 
 
             <!-- TOP OFFERS DIV -->
-            <div class="row  fftopoffers pt-3 px-2 px-md-4 mb-5">
+            <div class="row fftopoffers pt-3 px-2 px-md-4 mb-5">
 
                 <!-- TOP OFFER 1 -->
                 <div class="col-12 col-md-6 col-lg-3">
@@ -329,7 +329,7 @@
 
             
             <!-- HIGHLY CUSTOMIZABLE -->
-            <section>
+            <section id="blog">
                 <div class="row px-4" style="margin-top: 120px; margin-bottom: 50px">
                         <!-- LEFT SIDE -->
                         <div class="col-12 col-md-6 text-left">
@@ -369,9 +369,6 @@
                             <figure style="position: relative;">
                                 <img src="assets/photos/fastfood/banner.jpg" style="width: 100%;height: 491px;">
 
-
-
-
                                 <!-- HOVER LAST PICTURE -->
                                 <div class="newhover">
                                         <!-- DAY DEAL -->
@@ -401,14 +398,10 @@
                                         <!-- DAY DEAL END -->
                                     </div>
 
-
-
-
-
                             </figure>
                         </div>
                     </div>
-            </section>
+            </section><!-- HIGHLY CUSTOMIZABLE SECTION END -->
 
 
 
@@ -423,27 +416,33 @@
                     <p>Best place dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
                     <form action="" method="GET">
                         <div class="row justify-content-around">
+                            <!-- FORM NAME  -->
                             <div class="col-12 col-md-4">
                                 <label>Name:</label>
                                 <input type="text">
                             </div>
+                            <!-- FORM PHONE NUMBER -->
                             <div class="col-12 col-md-4">
                                 <label>Phone no.:</label>
                                 <input type="number" class="lb">
                             </div>
+                            <!-- FORM E-MAIL -->
                             <div class="col-12 col-md-4">
                                 <label>E-mail:</label>
                                 <input type="email" class="lb">
                             </div>
+                            <!-- TYPE YOUR ORDER  -->
                             <div class="col-12 col-md-12">
                                 <textarea placeholder="Type your order ..."></textarea>
                             </div>
                         </div>
+                        <!-- SUBMIT ORDER BUTTON -->
                         <input type="submit" value="Place Order" class="po">
-                    </form>
+                    </form><!-- FORM END -->
+                    <!-- WORKING TIME -->
                     <p>Opening hour is 7:00 am - 11:00 pm every day on week</p>
                 </div>
-            </section>
+            </section><!-- MAKE AN ORDER SECTION END -->
 
 
 
@@ -456,13 +455,12 @@
 
     <!-- FOOTER BEGIN -->
     <footer id="ffooter" style="margin-top: -40px;">
-        <img src="assets/photos/fastfood/footer.jpg" class="ffooterimg">
             <div class="ffooter">
                 <!-- ROW -->
                 <div class="row no-gutters">
                 
                     <!-- INFORMATION -->
-                    <div class="col">
+                    <div class="col px-4 px-lg-1">
                         <h3>information</h3>
                         <a href="#">About Us</a>
                         <a href="#">Delivery Information</a>
@@ -471,7 +469,7 @@
                     </div>
                 
                     <!-- CUSTOMER SERVICE -->
-                    <div class="col">
+                    <div class="col px-4 px-lg-1">
                         <h3>customer service</h3>
                         <a href="#">Contact Us</a>
                         <a href="#">Returns</a>
@@ -479,7 +477,7 @@
                     </div>
                 
                     <!-- EXTRAS -->
-                    <div class="col">
+                    <div class="col px-4 px-lg-1">
                         <h3>extras</h3>
                         <a href="#">Brands</a>
                         <a href="#">Gift Vouchers</a>
@@ -488,7 +486,7 @@
                     </div>
                 
                     <!-- MY ACCOUNT -->
-                    <div class="col">
+                    <div class="col px-4 px-lg-1">
                         <h3>my account</h3>
                         <a href="#">My Account</a>
                         <a href="#">Order History</a>
@@ -497,7 +495,7 @@
                     </div>
                 
                     <!-- CONTACT -->
-                    <div class="col">
+                    <div class="col px-4 px-lg-1">
                         <h3>contact</h3>
                         <p class="number">806234-58-12</p>
                         <p>info@website.com</p>
@@ -506,10 +504,9 @@
                     </div>
 
                     <div class="col-12 text-center">
-
                         <!-- SEPARATING LINE -->
                         <div class="mx-4 headerlinesdiv mt-lg-5 mb-lg-4"></div>
-
+                        <!-- FOOTER MENU -->
                         <ul class="list-unstyled">
                             <li><a href="#" class="active">home</a></li>
                             <li><a href="#">about</a></li>
@@ -524,7 +521,8 @@
 
                     <div class="col-12 text-center mt-lg-5">
                         <h2 class="mb-4">Follow Us</h2>
-                        <ul class="ffsocial">
+                        <!-- SOCIAL ICONS -->
+                        <ul class="ffsocial mb-0 pl-0">
                             <li><a href="#"><img src="assets/photos/fastfood/social6.png"></a></li>
                             <li><a href="#"><img src="assets/photos/fastfood/social2.png"></a></li>
                             <li><a href="#"><img src="assets/photos/fastfood/social1.png"></a></li>
@@ -538,15 +536,8 @@
 
 
                 </div><!-- ROW -->
-
-                
-
-                
             </div>
-
-
-
-    </footer>
+    </footer><!-- FOOTER END -->
 
 
 
