@@ -11,11 +11,13 @@ $(document).ready(function() {
 
            /* NAVIGATION TOGGLE BUTTON */ 
     $('#ffmenutoggle').click(function() {
+        event.preventDefault();
       $('#ffmenu').addClass('ffmenuactive');
       $('#body').addClass('overflow');
   });
 
   $('#ffmenuclose').click(function() {
+        event.preventDefault();
       $('#ffmenu').removeClass('ffmenuactive');
       $('#body').removeClass('overflow');
   });

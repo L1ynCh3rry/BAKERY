@@ -3,20 +3,22 @@ $(document).ready(function() {
     /* NAVIGATION SCROLL */
     $(window).scroll(function() {
       if ($(document).scrollTop() > 50) {
-        $('#ffnavigation').addClass('shrink');
+        $('#sushi').addClass('shrink');
       } else {
-        $('#ffnavigation').removeClass('shrink');
+        $('#sushi').removeClass('shrink');
       }
     });
 
      /* NAVIGATION TOGGLE BUTTON */ 
-$('#ffmenutoggle').click(function() {
-$('#ffmenu').addClass('ffmenuactive');
+$('#sushimenutoggle').click(function() {
+    event.preventDefault();
+$('#sushimenu').addClass('sushimenuactive');
 $('#body').addClass('overflow');
 });
 
-$('#ffmenuclose').click(function() {
-$('#ffmenu').removeClass('ffmenuactive');
+$('#sushimenuclose').click(function() {
+    event.preventDefault();
+$('#sushimenu').removeClass('sushimenuactive');
 $('#body').removeClass('overflow');
 });
 
@@ -89,4 +91,14 @@ $("#newsletter").validate({
     });
 
 
+    var swiper = new Swiper('.swiper-container', {
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+
+
 });
+
+
