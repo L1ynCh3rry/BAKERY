@@ -7,8 +7,13 @@
     <meta name="description" content="Bakery">
     <meta name="keywords" content="Bakery">
     <meta name="author" content="CUBES">
-    <title>Fast Food</title>
+    <title>Sushi</title>
+
+
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 
 
     <!-- FONT AWESOME -->
@@ -16,12 +21,10 @@
         crossorigin="anonymous">
 
     <!-- GOOGLE FONTS -->
-    <!-- MONTSERRAT -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700,800,900&amp;subset=cyrillic,latin-ext" rel="stylesheet">
-    <!-- ROBOTO SLAB REGULAR -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
-    <!-- RALEWAY -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&amp;subset=cyrillic,latin-ext" rel="stylesheet">
+
+    <!-- ROBOTO -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
 
     <!-- SWIPER CSS-->
     <link rel="stylesheet" href="assets/swiper.min.css">
@@ -33,7 +36,7 @@
     <link rel="stylesheet" type="text/css" href="assets/style.css" />
 
     <!-- FASTFOOD SETTINGS -->
-    <link rel="stylesheet" type="text/css" href="assets/fastfood/fastfoodsettings.css" />
+    <link rel="stylesheet" type="text/css" href="assets/sushi/sushisettings.css" />
 
     <!-- RESPONSIVE -->
     <link rel="stylesheet" type="text/css" href="assets/responsive.css" />
@@ -41,511 +44,479 @@
 
 <body id="body">
 
-    <!-- NAVIGATION -->
-    <section id="ffnavigation">
-        <div class="row no-gutters">
-            <div class="col-8 col-md-3 text-right">
-                <!-- LOGO -->
-                <a href="#" style="color: #e2dad1;" id="fflogo" class="mr-5">Fast<!--
-                --><span style="color: #f48e02">Food</span></a>
+
+    <header id="sushi">
+        <div class="row">
+            <div class="col-8 col-md-4 text-center">
+                <a href="#">
+                    <img src="assets/photos/sushi/logo.png">
+                    <p id="sushilogo">bar &amp;
+                        <span>resturant</span>
+                    </p>
+                </a>
             </div>
-            <div class="col-4 col-md-9">
-                <!-- MENU BEGIN -->
-                <menu id="ffmenu" class="mt-0">
+            <div class="col-4 col-md-8">
+                <nav id="sushimenu" class="text-center">
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#fffyd" class="active">about</a>
+                            <a href="#" class="active">discover</a>
                         </li>
                         <li>
-                            <a href="#topoffers">products</a>
+                            <a href="#">explore</a>
                         </li>
                         <li>
-                            <a href="#blog">blog</a>
+                            <a href="#">crow</a>
                         </li>
                         <li>
-                            <a href="#">shop</a>
+                            <a href="#">advocate</a>
                         </li>
                         <li>
-                            <a href="#">cusine</a>
+                            <a href="#">harbor watch</a>
                         </li>
                         <li>
-                            <a href="#">gallery</a>
-                        </li>
-                        <li>
-                            <a href="#mao">contact</a>
-                        </li>
-                        <li>
-                            <a href="#">my account</a>
-                        </li>
-                        <li><!-- CART -->
-                            <a href="#">cart
-                                <!-- ITEMS IN CART AND PRICE -->
-                                <span class="roboto">3($50)</span>
-                            </a>
+                            <a href="#">support</a>
                         </li>
                     </ul>
-                    <!-- CLOSE BUTTON FOR MENU -->
-                    <p style="position: absolute; bottom: 0; left: 50%;" id="ffmenuclose"><i class="fas fa-times" style="color: #fff;"></i></p>
-                </menu>
-                <!-- TOGGLE BUTTON FOR MENU -->
-                <i class="fas fa-caret-square-down fa-2x" id="ffmenutoggle"></i>
-                <!-- MENU ENDS -->
+                    <a href="#" id="sushimenuclose">
+                        <i class="fas fa-times fa-2x"></i>
+                    </a>
+                </nav>
+                <a href="#" id="sushimenutoggle">
+                    <i class="fas fa-bars fa-2x pt-4"></i>
+                </a>
             </div>
         </div>
-    </section>
+    </header>
 
 
-    <!-- FIND YOUR DISHES SECTION -->
-    <section id="fffyd">
-        <div class="text-center" style="position: relative;">
-                <!-- ABSOLUTE DIV -->
-                <div class="text-center topbannerdiv">
-                    <h1>Find Your Dishes</h1>
-                    <h3>highly customizable. ease to use and fully responsive</h3>
-                    <div class="fyd">
-                        <!-- DAY DEAL -->
-                        <h2 class="mb-1">
-                            <strong>DAY DEAL</strong>
-                        </h2>
-                        <p class="mb-1">
-                            <strong>australian cuisine</strong>
-                        </p>
-                        <!-- PRICE -->
-                        <p class="mb-1 ffprice roboto">
-                            <span>$</span>28</p>
-                        <!-- PLUS -->
-                        <figure class="fydplus">
-                            <img src="assets/photos/fastfood/plus.png">
-                        </figure>
-                        <!-- HEART ICON -->
-                        <figure class="fydicons" style="margin-right: 1.5%">
-                            <img src="assets/photos/fastfood/heart.png" class="ffheart">
-                        </figure>
-                        <!-- SHOPING CART ICON -->
-                        <figure class="fydicons">
-                            <img src="assets/photos/fastfood/cart.png">
-                        </figure>
-                        <!-- DAY DEAL END -->
-                    </div>
-                </div>
-                <!-- ABSOLUTE DIV ENDS-->
-        </div>
-    </section>
-    <!-- FIND YOUR DIHES SECTION END -->
+    <!-- DISCOVER BEGIN -->
+    <section id="sushidiscover">
+        <div>
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
 
-
-    <!-- CENTRAL CONTAINER-->
-    <section id="topoffers">
-        <div id="ffcontainer" class="text-center px-md-4 px-lg-5 py-4">
-            <!-- TOP OFFERS TITLE -->
-            <h3 style="color: #54514e; font-weight: 700;">- Top Offers -</h3>
-
-
-
-
-            <!-- TOP OFFERS DIV -->
-            <div class="row fftopoffers pt-3 px-2 px-md-4 mb-5">
-
-                <!-- TOP OFFER 1 -->
-                <div class="col-12 col-md-6 col-lg-3">
-                    <figure style="position: relative;">
-                        <!-- OFFER PICTURE -->
-                        <img src="assets/photos/fastfood/topoffer1.jpg">
-                        <h4 class="mb-0">Popular england tea</h4>
-                        <a href class="toinfo">+ info</a>
-                        <!-- HOVER -->
-                            <div class="topofferhover">
-                                <!-- PRICE -->
-                                <p class="mb-1 hoverprice roboto fftopoffershover">
-                                    <span>$</span>17
-                                </p>
-                                <!-- PLUS -->
-                                <figure class="hoverplus fftopoffershover">
-                                    <a href="#"><img src="assets/photos/fastfood/plus.png"></a>
-                                </figure>
-                                <!-- HEART ICON-->
-                                <figure class="hovericons fftopoffershover" style="margin-right: 1.5%">
-                                    <img src="assets/photos/fastfood/heart.png" class="ffheart">
-                                </figure>
-                                <!-- SHOPING CART ICON -->
-                                <figure class="hovericons fftopoffershover">
-                                    <a href="#"><img src="assets/photos/fastfood/cart.png"></a>
-                                </figure>
+                    <!-- SLIDE 1 -->
+                    <div class="swiper-slide">
+                        <figure style="position: relative;">
+                            <img src="assets/photos/sushi/topbanner.jpg">
+                            <div class="text-center swiperdiv">
+                                <h1>Japanese Sushi Restaurant</h1>
+                                <a href="#">book table</a>
                             </div>
-                    </figure>
-                </div>
-
-                <!-- TOP OFFER 2 -->
-                <div class="col-12 col-md-6 col-lg-3">
-                        <figure style="position: relative;">
-                                <!-- OFFER PICTURE -->
-                            <img src="assets/photos/fastfood/topoffer2.jpg">
-                            <h4 class="mb-0">Hot dogs</h4>
-                            <a href class="toinfo">+ info</a>
-                            <!-- HOVER -->
-                                <div class="topofferhover">
-                                    <!-- PRICE -->
-                                    <p class="mb-1 hoverprice roboto fftopoffershover">
-                                        <span>$</span>15
-                                    </p>
-                                    <!-- PLUS -->
-                                    <figure class="hoverplus fftopoffershover">
-                                        <a href="#"><img src="assets/photos/fastfood/plus.png"></a>
-                                    </figure>
-                                    <!-- HEART ICON-->
-                                    <figure class="hovericons fftopoffershover" style="margin-right: 1.5%">
-                                        <img src="assets/photos/fastfood/heart.png" class="ffheart">
-                                    </figure>
-                                    <!-- SHOPING CART ICON -->
-                                    <figure class="hovericons fftopoffershover">
-                                        <a href="#"><img src="assets/photos/fastfood/cart.png"></a>
-                                    </figure>
-                                </div>
                         </figure>
-                </div>
+                    </div>
+                    <!-- SLIDE 1 END-->
 
-                    <!-- TOP OFFER 3 -->
-                <div class="col-12 col-md-6 col-lg-3">
+                    <!-- SLIDE 1 -->
+                    <div class="swiper-slide">
                         <figure style="position: relative;">
-                                <!-- OFFER PICTURE -->
-                            <img src="assets/photos/fastfood/topoffer3.jpg">
-                            <h4 class="mb-0">American tacos</h4>
-                            <a href class="toinfo">+ info</a>
-                            <!-- HOVER -->
-                                <div class="topofferhover">
-                                    <!-- PRICE -->
-                                    <p class="mb-1 hoverprice roboto fftopoffershover">
-                                        <span>$</span>25
-                                    </p>
-                                    <!-- PLUS -->
-                                    <figure class="hoverplus fftopoffershover">
-                                        <a href="#"><img src="assets/photos/fastfood/plus.png"></a>
-                                    </figure>
-                                    <!-- HEART ICON-->
-                                    <figure class="hovericons fftopoffershover" style="margin-right: 1.5%">
-                                        <img src="assets/photos/fastfood/heart.png" class="ffheart">
-                                    </figure>
-                                    <!-- SHOPING CART ICON -->
-                                    <figure class="hovericons fftopoffershover">
-                                        <a href="#"><img src="assets/photos/fastfood/cart.png"></a>
-                                    </figure>
-                                </div>
+                            <img src="assets/photos/sushi/topbanner.jpg">
+                            <div class="text-center swiperdiv">
+                                <h1>Japanese Sushi Restaurant</h1>
+                                <a href="#">book table</a>
+                            </div>
                         </figure>
-                </div>
+                    </div>
+                    <!-- SLIDE 1 END-->
 
-                    <!-- TOP OFFER 4 -->
-                <div class="col-12 col-md-6 col-lg-3">
+                    <!-- SLIDE 1 -->
+                    <div class="swiper-slide">
                         <figure style="position: relative;">
-                                <!-- OFFER PICTURE -->
-                            <img src="assets/photos/fastfood/topoffer4.jpg">
-                            <h4 class="mb-0">Big Mac and coca cola</h4>
-                            <a href class="toinfo">+ info</a>
-                            <!-- HOVER -->
-                                <div class="topofferhover">
-                                    <!-- PRICE -->
-                                    <p class="mb-1 hoverprice roboto fftopoffershover">
-                                        <span>$</span>12
-                                    </p>
-                                    <!-- PLUS -->
-                                    <figure class="hoverplus fftopoffershover">
-                                        <a href="#"><img src="assets/photos/fastfood/plus.png"></a>
-                                    </figure>
-                                    <!-- HEART ICON-->
-                                    <figure class="hovericons fftopoffershover" style="margin-right: 1.5%">
-                                        <img src="assets/photos/fastfood/heart.png" class="ffheart">
-                                    </figure>
-                                    <!-- SHOPING CART ICON -->
-                                    <figure class="hovericons fftopoffershover">
-                                        <a href="#"><img src="assets/photos/fastfood/cart.png"></a>
-                                    </figure>
-                                </div>
+                            <img src="assets/photos/sushi/topbanner.jpg">
+                            <div class="text-center swiperdiv">
+                                <h1>Japanese Sushi Restaurant</h1>
+                                <a href="#">book table</a>
+                            </div>
                         </figure>
+                    </div>
+                    <!-- SLIDE 1 END-->
+
+                    <!-- SLIDE 1 -->
+                    <div class="swiper-slide">
+                        <figure style="position: relative;">
+                            <img src="assets/photos/sushi/topbanner.jpg">
+                            <div class="text-center swiperdiv" style="">
+                                <h1>Japanese Sushi Restaurant</h1>
+                                <a href="#">book table</a>
+                            </div>
+                        </figure>
+                    </div>
+                    <!-- SLIDE 1 END-->
+
                 </div>
-
-                    <!-- TOP OFFERS END-->
-
-            </div>
-            <!-- TOP OFFERS DIV END-->
-
-
-            <!-- SEPARATING LINE-->
-            <div class="mx-4 headerlinesdiv">
-                <!-- TODAYS SPECIAL HEADER -->
-                <h3 class="headerlines">Today's Specials</h3>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
             </div>
 
+        </div>
+    </section>
+    <!-- DISCOVER END -->
 
 
 
 
-            <!-- TODAYS SPECIALS DIV -->
-            <div class="row ffts my-5 px-2 px-md-4 text-center">
-
-                <!-- SPECIAL 1 -->
+    <!-- WELCOME TO OUR RESTAURANT -->
+    <section id="sushiwelcome" style="background-color: #f6f7f9" class="py-5">
+        <div class="text-center">
+            <h1 class="robotothin">Welcome to Our Restaurant</h1>
+            <div class="row no-gutters my-5 justify-content-end" style="width: fit-content; margin: auto;">
+                <!-- PICTURE 1 -->
                 <div class="col">
+                    <img src="assets/photos/sushi/img1.jpg">
+                </div>
+                <!-- PICTURE 2 -->
+                <div class="col">
+                    <img src="assets/photos/sushi/img2.jpg">
+                </div>
+                <!-- PICTURE 3 -->
+                <div class="col">
+                    <img src="assets/photos/sushi/img3.jpg">
+                </div>
+                <!-- PICTURE 4 -->
+                <div class="col">
+                    <img src="assets/photos/sushi/img4.jpg">
+                </div>
+                <!-- PICTURE 5 -->
+                <div class="col">
+                    <img src="assets/photos/sushi/img5.jpg">
+                </div>
+                <!-- PICTURE 6 -->
+                <div class="col">
+                    <img src="assets/photos/sushi/img6.jpg">
+                </div>
+            </div>
+            <h4 class="mb-4">
+                <strong>Popular Orchard Corsets, lorem ipsum dolor sita maet</strong>
+            </h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ipsum odio, aliquam vitae semper a, ultrices
+                id nunc. Vestibulum congue, sapien sit amet rhoncus laoreet, dui ipsum dictum enim, eget adipiscing libero
+                lacus vel dui. Morbi sollicitudin, quam at mattis commodo, nibh libero porta tellus</p>
+        </div>
+    </section>
+    <!-- WELCOME TO OUR RESTAURANT END-->
+
+
+
+
+    <!-- CHECK OUR SUSHI -->
+    <section id="sushicheck">
+        <div class="row no-gutters">
+            <div class="col-12 col-md-6 text-center" style="padding-top: 100px;">
+                <!-- CHECK OUR SUSHI TITLE-->
+                <h1 class="robotothin">Check Our Sushi</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ipsum odio, aliquam vitae semper a, ultrices
+                    id nunc. Vestibulum congue, sapien sit amet rhoncus laoreet, dui ipsum dictum enim, eget adipiscing libero
+                    lacus vel dui. Morbi sollicitudin, quam at mattis commodo, nibh libero porta tellus. Vestibulum congue,
+                    sapien sit amet rhoncus laoreet,dui ipsum dictum enim, eget rhoncus laoreet adipiscing libero lacus vel
+                    dui. </p>
+                <!-- BOOK TABLE BUTTOn-->
+                <a href="#">book table</a>
+            </div>
+            <div class="col-12 col-md-6 mt-5">
+                <!-- CHECK OUR SUSHI IMG -->
+                <img src="assets/photos/sushi/checkoursushi.png">
+            </div>
+        </div>
+    </section>
+    <!-- CHECK OUR SUSHI END -->
+
+
+    <!-- SUSHI MENU -->
+    <section id="cosm">
+        <div class="text-center">
+            <h1 class="robotothin">Check Our Sushi Menu</h1>
+            <p>Studybees mediated tutoring by students for students and especially for your university or college. More</p>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#">fish<!--
+                    --><span></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">rolls<!-- 
+                        --><span></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">vegetarian<!--
+                        --><span></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">soups<!--
+                        --><span></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="active">all<!--
+                        --><span></span>
+                    </a>
+                </li>
+            </ul>
+            <div class="px-3 px-md-5 no-gutters row justify-content-center">
+
+                <!-- SUSHI MENU ITEM 1 -->
+                <div class="col-12 col-md-2">
                     <figure>
-                        <img src="assets/photos/fastfood/ts4.png">
+                        <img src="assets/photos/sushi/menuitem1.png">
                     </figure>
-                    <a href="#">sandwiches</a>
+                    <h4>Apple Crumb Squares</h4>
+                    <h2>$12.00</h2>
                 </div>
 
-                <!-- SPECIAL 2 -->
-                <div class="col">
-                        <figure>
-                            <img src="assets/photos/fastfood/ts2.png">
-                        </figure>
-                    <a href="#">hamburgers</a>
+                <!-- SUSHI MENU ITEM 2 -->
+                <div class="col-12 col-md-2">
+                    <figure>
+                        <img src="assets/photos/sushi/menuitem2.png">
+                    </figure>
+                    <h4>Apple Crumb Squares</h4>
+                    <h2>$12.00</h2>
                 </div>
 
-                <!-- SPECIAL 3 -->
-                <div class="col">
-                        <figure>
-                            <img src="assets/photos/fastfood/ts3.png">
-                        </figure>
-                    <a href="#">tacos</a>
+                <!-- SUSHI MENU ITEM 3 -->
+                <div class="col-12 col-md-2">
+                    <figure>
+                        <img src="assets/photos/sushi/menuitem3.png">
+                    </figure>
+                    <h4>Apple Crumb Squares</h4>
+                    <h2>$12.00</h2>
                 </div>
 
-                <!-- SPECIAL 4 -->
-                <div class="col">
-                        <figure>
-                            <img src="assets/photos/fastfood/ts4.png">
-                        </figure>
-                    <a href="#">rolls</a>
+                <!-- SUSHI MENU ITEM 4 -->
+                <div class="col-12 col-md-2">
+                    <figure>
+                        <img src="assets/photos/sushi/menuitem4.png">
+                    </figure>
+                    <h4>Apple Crumb Squares</h4>
+                    <h2>$12.00</h2>
                 </div>
 
-                <!-- SPECIAL 5 -->
-                <div class="col">
-                        <figure>
-                            <img src="assets/photos/fastfood/ts5.png">
-                        </figure>
-                    <a href="#">french fries</a>
+                <!-- SUSHI MENU ITEM 5 -->
+                <div class="col-12 col-md-2">
+                    <figure>
+                        <img src="assets/photos/sushi/menuitem5.png">
+                    </figure>
+                    <h4>Apple Crumb Squares</h4>
+                    <h2>$12.00</h2>
                 </div>
-
-            </div>
-            <!-- TODAYS SPECIALS DIV END -->
-
-
-            <!-- SEPARATING LINE -->
-            <div class="mx-4 headerlinesdiv"></div>
-
-            
-            <!-- HIGHLY CUSTOMIZABLE -->
-            <section id="blog">
-                <div class="row px-4" style="margin-top: 120px; margin-bottom: 50px">
-                        <!-- LEFT SIDE -->
-                        <div class="col-12 col-md-6 text-left">
-                            <h3 style="color: #54514e; font-weight: 800">Highly Customizable</h3>
-                            <p style="color: #54514e; font-weight: 600">Easy to use and fully responsive</p>
-                            
-                            <div class="row mt-4">
-        
-                                <!-- PART 1 -->
-                                <div class="col-12 col-lg-6 pb-5">
-                                    <p style="color: #f48e02; font-weight: 600">Highly customizable</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                </div>
-        
-                                <!-- PART 2 -->
-                                <div class="col-12 col-lg-6 pb-5">
-                                    <p style="color: #f48e02; font-weight: 600">Endless Possibilities</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                </div>
-        
-                                <!-- PART 3 -->
-                                <div class="col-12 col-lg-6 pb-5">
-                                    <p style="color: #f48e02; font-weight: 600">Fully responsive</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquatempor incididunt ut labore et dolore magna aliqua</p>
-                                </div>
-        
-                                <!-- PART 4 -->
-                                <div class="col-12 col-lg-6 pb-5">
-                                    <p style="color: #f48e02; font-weight: 600">OpenCart premium theme</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquatempor incididunt ut labore et dolore magna aliqua</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- RIGHT SIDE-->
-                        <div class="col-12 col-md-6">
-                            <figure style="position: relative;">
-                                <img src="assets/photos/fastfood/banner.jpg" style="width: 100%;height: 491px;">
-
-                                <!-- HOVER LAST PICTURE -->
-                                <div class="newhover">
-                                        <!-- DAY DEAL -->
-                                        <h2 class="mb-1 roboto">
-                                            <strong>NEW</strong>
-                                        </h2>
-                                        <p class="mb-1">
-                                            <strong>spices</strong>
-                                        </p>
-                                        <!-- PRICE -->
-                                        <p class="mb-1 nhprice roboto" style="position: relative;">
-                                            <span>$</span>23
-                                            <span style="position: absolute; top: 5px; left: 10px; color: rgba(200, 200, 200, 0.8); font-weight: 600;">from</span>
-                                        </p>
-                                        <!-- PLUS -->
-                                        <figure class="nhplus">
-                                            <img src="assets/photos/fastfood/plus.png">
-                                        </figure>
-                                        <!-- HEART ICON-->
-                                        <figure class="nhicons" style="margin-right: 1.5%">
-                                            <img src="assets/photos/fastfood/heart.png" class="ffheart">
-                                        </figure>
-                                        <!-- SHOPING CART ICON -->
-                                        <figure class="nhicons">
-                                            <img src="assets/photos/fastfood/cart.png">
-                                        </figure>
-                                        <!-- DAY DEAL END -->
-                                    </div>
-
-                            </figure>
-                        </div>
-                    </div>
-            </section><!-- HIGHLY CUSTOMIZABLE SECTION END -->
-
-
-
-            <!-- SEPARATING LINE -->
-            <div class="mx-4 headerlinesdiv"></div>
-
-
-            <!-- MAKE AN ORDER -->
-            <section id="mao">
-                <div class="text-center">
-                    <h1>Make an Order</h1>
-                    <p>Best place dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
-                    <form action="" method="GET" id="maoform">
-                        <div class="row justify-content-around">
-                            <!-- FORM NAME  -->
-                            <div class="col-12 col-md-4">
-                                <label>Name:</label>
-                                <input type="text" name="name">
-                            </div>
-                            <!-- FORM PHONE NUMBER -->
-                            <div class="col-12 col-md-4">
-                                <label>Phone no.:</label>
-                                <input type="number" class="lb" name="phone">
-                            </div>
-                            <!-- FORM E-MAIL -->
-                            <div class="col-12 col-md-4">
-                                <label>E-mail:</label>
-                                <input type="email" class="lb" name="email">
-                            </div>
-                            <!-- TYPE YOUR ORDER  -->
-                            <div class="col-12 col-md-12">
-                                <textarea placeholder="Type your order ..." name="order"></textarea>
-                            </div>
-                        </div>
-                        <!-- SUBMIT ORDER BUTTON -->
-                        <input type="submit" value="Place Order" class="po">
-                    </form><!-- FORM END -->
-                    <!-- WORKING TIME -->
-                    <p>Opening hour is 7:00 am - 11:00 pm every day on week</p>
-                </div>
-            </section><!-- MAKE AN ORDER SECTION END -->
-
-
 
             </div>
         </div>
     </section>
-    <!-- CENTRAL CONTAINER END -->
+    <!-- SUSHI MENU END -->
 
 
 
-    <!-- FOOTER BEGIN -->
-    <footer id="ffooter" style="margin-top: -40px;">
-            <div class="ffooter">
-                <!-- ROW -->
-                <div class="row no-gutters">
-                
-                    <!-- INFORMATION -->
-                    <div class="col px-4 px-lg-1">
-                        <h3>information</h3>
-                        <a href="#">About Us</a>
-                        <a href="#">Delivery Information</a>
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms &amp; Conditions</a>
+
+
+    <!-- ENROLLMENT FOR 2015-16 -->
+    <section id="sushienrollment">
+        <div class="text-center">
+            <h1 class="robotothin">Enrollment for 2015-16</h1>
+            <p class="pb-5">
+                <strong>We still have openings in the Fun For 2s Class, the T/TH Hummingbirds (3s) and the Robins M-F(3s/4s).</strong>
+            </p>
+            <a href="#">learn more</a>
+        </div>
+    </section>
+    <!-- ENROLLMENT FOR 2015-16 END -->
+
+
+
+
+
+
+    <!-- BOOK A TABLE -->
+    <section id="sushibat">
+        <div>
+            <form action="" method="POST" id="bookatable">
+                <div class="row justify-content-around">
+                    <!-- FORM FULL NAME  -->
+                    <div class="col-12">
+                        <input type="text" name="fullname" placeholder="Full Name *">
                     </div>
-                
-                    <!-- CUSTOMER SERVICE -->
-                    <div class="col px-4 px-lg-1">
-                        <h3>customer service</h3>
-                        <a href="#">Contact Us</a>
-                        <a href="#">Returns</a>
-                        <a href="#">Site Map</a>
+                    <!-- FORM PHONE NUMBER -->
+                    <div class="col-12">
+                        <input type="text" name="phone" placeholder="Phone Number *">
                     </div>
-                
-                    <!-- EXTRAS -->
-                    <div class="col px-4 px-lg-1">
-                        <h3>extras</h3>
-                        <a href="#">Brands</a>
-                        <a href="#">Gift Vouchers</a>
-                        <a href="#">Afilites</a>
-                        <a href="#">Specials</a>
+                    <!-- FORM TIME -->
+                    <div class="col-12 col-md-6">
+                        <input type="text" name="time" placeholder="Time *">
                     </div>
-                
-                    <!-- MY ACCOUNT -->
-                    <div class="col px-4 px-lg-1">
-                        <h3>my account</h3>
-                        <a href="#">My Account</a>
-                        <a href="#">Order History</a>
-                        <a href="#">Wish List</a>
-                        <a href="#">Newsletter</a>
+                    <!-- FORM DATE -->
+                    <div class="col-12 col-md-6">
+                        <input type="text" name="date" placeholder="Date *">
                     </div>
-                
-                    <!-- CONTACT -->
-                    <div class="col px-4 px-lg-1">
-                        <h3>contact</h3>
-                        <p class="number">806234-58-12</p>
-                        <p>info@website.com</p>
-                        <i class="fas fa-map-marker-alt" style="color: #fff;"></i>
-                        <p><strong>Spain,</strong> Madrid <span class="number">4456</span>Fourth St</p>
+                    <!-- FORM E-MAIL -->
+                    <div class="col-12">
+                        <input type="email" name="email" placeholder="Email Address">
                     </div>
-
-                    <div class="col-12 text-center">
-                        <!-- SEPARATING LINE -->
-                        <div class="mx-4 headerlinesdiv mt-lg-5 mb-lg-4"></div>
-                        <!-- FOOTER MENU -->
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="active">home</a></li>
-                            <li><a href="#">about</a></li>
-                            <li><a href="#">products</a></li>
-                            <li><a href="#">blog</a></li>
-                            <li><a href="#">shop</a></li>
-                            <li><a href="#">cusine</a></li>
-                            <li><a href="#">gallery</a></li>
-                            <li><a href="#">contacts</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-12 text-center mt-lg-5">
-                        <h2 class="mb-4">Follow Us</h2>
-                        <!-- SOCIAL ICONS -->
-                        <ul class="ffsocial mb-0 pl-0">
-                            <li><a href="#"><img src="assets/photos/fastfood/social6.png"></a></li>
-                            <li><a href="#"><img src="assets/photos/fastfood/social2.png"></a></li>
-                            <li><a href="#"><img src="assets/photos/fastfood/social1.png"></a></li>
-                            <li><a href="#"><img src="assets/photos/fastfood/social7.png"></a></li>
-                            <li><a href="#"><img src="assets/photos/fastfood/social4.png"></a></li>
-                            <li><a href="#"><img src="assets/photos/fastfood/social5.png"></a></li>
-                            <li><a href="#"><img src="assets/photos/fastfood/social3.png"></a></li>
-                        </ul>
-                    </div>
+                </div>
+                <!-- REQUEST BUTTON -->
+                <input type="submit" value="REQUEST" class="request">
+            </form>
+        </div>
+    </section>
+    <!-- BOOK A TABLE END-->
 
 
 
-                </div><!-- ROW -->
+
+
+    <!-- FOOTER -->
+    <section id="sushifooter">
+        <footer>
+            <div class="row no-gutters">
+
+                <!-- NEWSLETTER -->
+                <div class="col">
+                    <h2>newsletter</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod:</p>
+                    <form method="POST" action="">
+                        <!-- FORM NAME -->
+                        <input type="text" name="name" placeholder="Name" class="mb-3">
+                        <!-- FORM E-MAIL -->
+                        <input type="email" name="email" placeholder="E-mail" class="mb-3">
+                        <!-- SUBMIT SUBMIT BUTTON -->
+                        <input type="submit" value="SUBMIT" class="submit">
+                    </form>
+                </div>
+
+
+                <!-- INFORMATION -->
+                <div class="col">
+                    <h2>information</h2>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Discover</a>
+                        </li>
+                        <li>
+                            <a href="#">Exchanges</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Explore</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- CATEGORIES -->
+                <div class="col">
+                    <h2>categories</h2>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#">Nature</a>
+                        </li>
+                        <li>
+                            <a href="#">Deal of the Week</a>
+                        </li>
+                        <li>
+                            <a href="#">Harbor Watch</a>
+                        </li>
+                        <li>
+                            <a href="#">Animals</a>
+                        </li>
+                        <li>
+                            <a href="#">Grow</a>
+                        </li>
+                        <li>
+                            <a href="#">Events</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!-- EXTRAS -->
+                <div class="col">
+                    <h2>extras</h2>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#">Support</a>
+                        </li>
+                        <li>
+                            <a href="#">Gift Vouchers</a>
+                        </li>
+                        <li>
+                            <a href="#">Enter to Win</a>
+                        </li>
+                        <li>
+                            <a href="#">Programs</a>
+                        </li>
+                        <li>
+                            <a href="#">Gift Certificates</a>
+                        </li>
+                        <li>
+                            <a href="#">2016 Summer</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!-- CONTACT-->
+                <div class="col">
+                    <h2>contact</h2>
+                    <div class="row no-gutters">
+                        <div class="col-2">
+                            <img src="assets/photos/sushi/contact2.png">
+                        </div>
+                        <div class="col-10">
+                            <h4>203-557-4400 (TOLL FREE)</h4>
+                        </div>
+                        <div class="col-2">
+                            <img src="assets/photos/sushi/contact3.png">
+                        </div>
+                        <div class="col-10">
+                            <h4>director@earthplace.org</h4>
+                        </div>
+                        <div class="col-2">
+                            <img src="assets/photos/sushi/contact1.png">
+                        </div>
+                        <div class="col-10">
+                            <h4>EarthPlace</h3>
+                            <h4>10 Woodside Lane</h4>
+                            <h4>Westport,CT 06880, USA</h4>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- SOCIALS -->
+                <div class="col-12 text-center">
+                    <ul class="list-unstyled sushisocial">
+                        <li><a href="#" class="px-2"><img src="assets/photos/sushi/social1.png"></a></li>
+                        <li><a href="#" class="px-2"><img src="assets/photos/sushi/social2.png"></a></li>
+                        <li><a href="#" class="px-2"><img src="assets/photos/sushi/social3.png"></a></li>
+                        <li><a href="#" class="px-2"><img src="assets/photos/sushi/social4.png"></a></li>
+                        <li><a href="#" class="px-2"><img src="assets/photos/sushi/social5.png"></a></li>
+                        <li><a href="#" class="px-2"><img src="assets/photos/sushi/social6.png"></a></li>
+                        <li><a href="#" class="px-2"><img src="assets/photos/sushi/social7.png"></a></li>
+                    </ul>
+                    <p>All prices are in USD Copyright 2016 EarthPlace. | <a style="text-decoration: underline;">Sitemap</a> | <a style="text-decoration: underline;">Terms and Conditions</a></p>
+                </div>
+
+
             </div>
-    </footer><!-- FOOTER END -->
+        </footer>
+    </section>
+    <!-- FOOTER END -->
 
 
 
-    
+
+
     <!-- JQUERY -->
     <script src="assets/jquery.js" type="text/javascript"></script>
-
+    <!-- JQUERY VALIDATION -->
     <script src="assets/jquery.validate.min.js" type="text/javascript"></script>
     <!-- POPPER -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -553,7 +524,7 @@
     <!-- BOOTSTRAP -->
     <script src="assets/bootstrap.min.js" type="text/javascript"></script>
     <!-- MAIN JS -->
-    <script src="assets/fastfood/main.js" type="text/javascript"></script>
+    <script src="assets/sushi/main.js" type="text/javascript"></script>
 
     <!-- SWIPER JS-->
     <script src="assets/swiper.min.js"></script>
