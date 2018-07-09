@@ -3,9 +3,9 @@ $(document).ready(function() {
     /* NAVIGATION SCROLL */
     $(window).scroll(function() {
       if ($(document).scrollTop() > 50) {
-        $('#sushi').addClass('shrink');
+        $('#cakenav').addClass('shrink');
       } else {
-        $('#sushi').removeClass('shrink');
+        $('#cakenav').removeClass('shrink');
       }
     });
 
@@ -25,16 +25,17 @@ $('#body').removeClass('overflow');
 
 
 /* BOOK A TABLE VALIDATION */
-$("#bookatable").validate({
+$("#reservation").validate({
 rules: {
-  fullname: {
+  name: {
       required: true,
       minlength: 5
   },
   email: {
+      required: true,
       email: true
   },
-  phone: {
+  peopleno: {
       required: true
   },
   time: {
@@ -45,15 +46,16 @@ rules: {
   }
 },
 messages: {
-  fullname: {
+  name: {
       required: '<p style="color: #f00;">Name field is required</p>',
       minlength: '<p style="color: #f00;">Name must have at least 5 characters</p>'
   },
   email: {
+      required: '<p style="color: #f00;">E-mail field is required</p>',
       email: '<p style="color: #f00;">Please enter a valid email adress'
   },
-  phone: {
-      required: '<p style="color: #f00;">Phone number is required</p>'
+  peopleno: {
+      required: '<p style="color: #f00;">People No. field is required</p>'
   },
   time: {
       required: '<p style="color: #f00;">Time field is required</p>'
@@ -71,32 +73,20 @@ messages: {
 /* NEWSLETTER VALIDATION */
 $("#newsletter").validate({
     rules: {
-      name: {
-          required: true,
-          minlength: 5
-      },
       email: {
+          required: true,
           email: true
       }
     },
     messages: {
-      name: {
-          required: '<p style="color: #f00;">Name field is required</p>',
-          minlength: '<p style="color: #f00;">Name must have at least 5 characters</p>'
-      },
       email: {
+          required: '<p style="color: #f00;">E-mail field is required</p>',
           email: '<p style="color: #f00;">Please enter a valid email adress'
       }
     }
     });
 
-
-    var swiper = new Swiper('.swiper-container', {
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-      });
+    
 
 
 });
