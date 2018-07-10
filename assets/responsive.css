@@ -1,7 +1,21 @@
 @media(min-width:320px) {
 
 }
-@media(min-width:435px) { .fyd{    width: 60%;    margin-left: 20%; } } /* CUSTOM */
+@media(min-width:435px) {
+    .fyd{
+        width: 60%;    
+        margin-left: 20%;    
+    } 
+    #cakesheader h1{ 
+        font-size: 32px; 
+    }
+    #aboutbakerys{
+        width: 300px;
+    }
+
+
+
+} /* CUSTOM */
 
 
 
@@ -50,6 +64,18 @@
         width: 300px;
         margin: auto;
     }
+    /*        CAKES       */
+    #topbanner h1{
+        font-size: 42px;
+    }
+    #aboutbakerys{
+        width: 400px;
+    }
+
+
+
+
+
 }
 
 @media(min-width:768px) {   /*             768            */
@@ -195,6 +221,74 @@
     #sushifooter{
         padding: 100px 200px;
     }
+    /* CAKES */
+    #cakesheader h1{
+        font-size: 32px;
+    }
+    #cakesmenu{
+        position: static;
+        width: 100%;
+        height: auto;
+        background: transparent;
+        z-index: auto;
+        text-align: center;
+        padding: 15px 0;
+    }
+    #cakesmenu li{
+        float: none;
+        display: inline-block;
+    }
+    #cakesmenu li a{
+        color: #fff;
+        text-transform: uppercase;
+        padding: 10px 2px;
+        font-size: 10px;
+    }
+    #cakesmenu li a:hover{
+        color: rgb(172, 172, 172);
+    }
+    #topsocial ul{
+        text-align: center;
+        position: static;
+        width: 100%;
+        height: auto;
+        overflow: auto;
+        padding: 15px 0;
+    }
+    #topsocial ul li{
+        float: left;
+    }
+    #topsocial li a img{
+        max-width: 25px;
+        max-height: 25px;
+        margin-bottom: 0;
+        margin-left: 5px;
+        transition: 0.2s ease;
+    }
+    #topsocial li a:hover img{
+        transform: rotateX(160deg);
+    }
+    /* BUTTONS */
+    #cakesmenuclose,
+    #cakesmenutoggle,
+    #socialbutton{
+        display: none!important;
+    }
+    #topbanner h1{
+        font-size: 48px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
@@ -259,6 +353,18 @@
         top: 0;
         padding: 90px 180px 50px;
     }
+    /* CAKES */
+    #cakesmenu li a{
+        color: #fff;
+        text-transform: uppercase;
+        padding: 10px 4px;
+        font-size: 14px;
+    }
+    #topsocial li a img{
+        margin-left: 10px;
+    }
+
+
 }
 
 @media(min-width:1200px) {    /*            1200            */
@@ -308,6 +414,20 @@
         width: 400px;
         margin: auto;
     }
+    /* CAKES */
+    #cakesmenu li a{
+        color: #fff;
+        text-transform: uppercase;
+        padding: 10px 10px;
+        font-size: 14px;
+    }
+    #topbanner h1{
+        font-size: 56px;
+    }
+
+
+
+
 }
 
 @media(min-width:1400px) {    /*          1400 CUSTOM            */

@@ -3,24 +3,49 @@ $(document).ready(function() {
     /* NAVIGATION SCROLL */
     $(window).scroll(function() {
       if ($(document).scrollTop() > 50) {
-        $('#cakenav').addClass('shrink');
+        $('#cakesheader').addClass('shrink');
       } else {
-        $('#cakenav').removeClass('shrink');
+        $('#cakesheader').removeClass('shrink');
       }
     });
 
+
+
+
+
+
+
+
+
+
      /* NAVIGATION TOGGLE BUTTON */ 
-$('#sushimenutoggle').click(function() {
+$('#cakesmenutoggle').click(function() {
     event.preventDefault();
-$('#sushimenu').addClass('sushimenuactive');
+$('#cakesmenu').addClass('cakesmenuactive');
 $('#body').addClass('overflow');
 });
 
-$('#sushimenuclose').click(function() {
+$('#cakesmenuclose').click(function() {
     event.preventDefault();
-$('#sushimenu').removeClass('sushimenuactive');
+$('#cakesmenu').removeClass('cakesmenuactive');
 $('#body').removeClass('overflow');
 });
+
+
+/* SOCIAL BUTTON TOGGLE */
+$('#cakessocialtoggle').click(function() {
+    event.preventDefault();
+$('#socialbutton').toggleClass('socialbuttonactive');
+$('#topsocialul').toggleClass('topsocialactive');
+});
+
+
+
+
+
+
+
+
 
 
 
@@ -87,6 +112,27 @@ $("#newsletter").validate({
     });
 
     
+
+
+
+
+
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 5,
+        spaceBetween: 10,
+        slidesPerGroup: 5,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+
 
 
 });

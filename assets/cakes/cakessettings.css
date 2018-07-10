@@ -1,6 +1,296 @@
 img{
     max-width: 100%;
 }
-.shrink{
-    
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    transition: 0.3s ease;
+    z-index: 5;
 }
+.shrink{
+    height: 80px;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+
+/* MENU */
+#cakesheader h1{
+    font-size: 22px;
+}
+#cakesmenu{
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 6;
+}
+#cakesmenu li a{
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px 10px;
+    font-size: 22px;
+}
+.cakesmenuactive{
+    top: 0!important;
+}
+#cakesmenuclose{
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#cakesmenutoggle{
+    color: #fff;
+}
+/* TOP SOCIALS */
+#topsocial ul{
+    text-align: center;
+    position: absolute;
+    width: 30px;
+    height: 0;
+    left: 0;
+    top: 35px;
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+.topsocialactive{
+    height: 150px!important;
+}
+#topsocial li{
+    display: inline-block;
+    float: none;
+}
+#topsocial li a img{
+    max-width: 25px;
+    max-height: 25px;
+    margin-bottom: 5px;
+}
+/* SOCIAL BUTTONS TOGGLE */
+#socialbutton{
+    transition: 0.5s ease;
+    transform: rotateZ(90deg);
+}
+.socialbuttonactive{
+    transform: rotateZ(270deg)!important;
+    color: rgb(172, 172, 172)!important;
+}
+/* TOP BANNER */
+#topbanner{
+    background: url('../photos/cakes/topbanner.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 900px;
+    padding: 250px 10%;
+}
+#topbanner h1,
+#topbanner a{
+    color: #fff;
+    text-transform: uppercase;
+}
+#topbanner h1{
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: -10px;
+}
+#topbanner h1:last-of-type{
+    margin-bottom: 40px;
+}
+#topbanner h1.choco{
+    font-weight: 800;
+}
+#topbanner a{
+    border: 1px solid #fff;
+    border-radius: 50px;
+    padding: 10px 40px; 
+    color: #fff;
+    background: rgba(0, 0, 0, 0.1);
+}
+/* CAKES ABOUT */
+#cakesabout{
+    background: url('../photos/cakes/about.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 940px;
+    padding-top: 15%;
+}
+#aboutbakerys{
+    width: 200px;
+    margin: auto;
+}
+#cakesabout img{
+    margin-bottom: 30px;
+}
+#cakesabout h1,
+#cakesabout h3{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+#cakesabout h3{
+    color: #2a1b1e;
+    font-weight: 300;
+}
+/* ABOUT US BUTTON */
+#cakesabout a{
+    color: #000;
+    border-radius: 50px;
+    border: 1px solid #000;
+    padding: 10px 30px 10px 70px;
+    position: relative;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 20px;
+}
+#cakesabout a span{
+    position: absolute;
+    left: 13px;
+    top: 0px;
+    height: 100%;
+    color: #f00;
+    font-size: 22px;
+    border-right: 1.5px solid rgba(0, 0, 0, 0.1);
+    padding-right: 15px;
+}
+
+/* MENU */
+#cakesbook{
+    background: url('../photos/cakes/menu.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 1000px;
+    padding-top: 70px;
+}
+#cakesbook img{max-width: 100%;}
+#cakesbook h1{
+    color: #fff;
+    text-transform: uppercase;
+}
+#cakesbook h2{
+    color: #fff;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+/* TITLE DECORATION */
+#cakesbook .decoration{
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+#cakesbook .decoration img{
+    position: absolute;
+    top: 30px;
+}
+#cakesbook img.right{
+    right: 0;
+    transform: translateX(100%);
+}
+#cakesbook img.left{
+    left: 0;
+    transform: translateX(-100%) rotateY(180deg);
+}
+
+/* NEW BAKERYS */
+#cakesnew{
+    background-color: #fff;
+    min-height: 600px;
+    padding: 100px 0;
+}
+#cakesnew .newbakery{
+    padding: 50px 10%;
+}
+#cakesnew h1,
+#cakesnew h2{
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #000;
+}
+#cakesnew h1 span{
+    color: #95001e;
+}
+#cakesnew p{
+    font-weight: 500;
+}
+
+/* RECOMMEND */
+#recommend{
+    min-height: 570px;
+    background: url('../photos/cakes/recommend.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 10%  0;
+}
+#recommend h1,
+#recommend h3{
+    color: #fff;
+}
+#recommend h1{
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+#recommend .swiper-container h3{
+    color: #fff;
+}
+#recommend .swiper-container{
+    width: 100%;
+    height: 350px;
+    padding: 0 50px;
+}
+#recommend .swiper-button-prev,
+#recommend .swiper-button-next{
+    color: #fff;
+}
+
+/* POPULAR */
+#cakesnew ul li a i{
+    color: #a01731;
+}
+#cakesnew ul{
+    text-align: center;
+}
+#cakesnew ul li{
+    float: none;
+    display: inline-block;
+}
+/* ABOUT US BUTTON */
+#cakesnew a.details{
+    color: #000;
+    border-radius: 50px;
+    border: 1px solid #000;
+    padding: 10px 30px 10px 70px;
+    position: relative;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: 500;
+}
+#cakesnew a.details span{
+    position: absolute;
+    left: 13px;
+    top: 0px;
+    height: 100%;
+    color: #f00;
+    font-size: 22px;
+    border-right: 1.5px solid rgba(0, 0, 0, 0.1);
+    padding-right: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
