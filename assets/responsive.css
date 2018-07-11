@@ -71,7 +71,17 @@
     #aboutbakerys{
         width: 400px;
     }
-
+    #reservationform{
+        width: 400px;
+        height: 450px;
+        padding: 10px;
+    }
+    #reservationform form{
+        padding: 15px 30px;
+    }
+    #reservationform h1{
+        font-size: 34px;
+    }
 
 
 
@@ -277,10 +287,10 @@
     #topbanner h1{
         font-size: 48px;
     }
-
-
-
-
+    #cakesbook .decoration{
+        overflow: visible;
+    }
+    
 
 
 
@@ -424,7 +434,17 @@
     #topbanner h1{
         font-size: 56px;
     }
-
+    #reservationform{
+        width: 500px;
+        height: 450px;
+        padding: 15px;
+    }
+    #reservationform form{
+        padding: 15px 30px;
+    }
+    #reservationform h1{
+        font-size: 32px;
+    }
 
 
 

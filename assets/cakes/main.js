@@ -117,7 +117,7 @@ $("#newsletter").validate({
 
 
 
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('.recommendswiper', {
         slidesPerView: 5,
         spaceBetween: 10,
         slidesPerGroup: 5,
@@ -133,6 +133,13 @@ $("#newsletter").validate({
         },
       });
 
+
+      var swiper = new Swiper('.videothumb', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
 
 
 });
