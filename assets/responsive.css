@@ -73,7 +73,7 @@
     }
     #reservationform{
         width: 400px;
-        height: 450px;
+        height: auto;
         padding: 10px;
     }
     #reservationform form{
@@ -436,7 +436,7 @@
     }
     #reservationform{
         width: 500px;
-        height: 450px;
+        height: auto;
         padding: 15px;
     }
     #reservationform form{

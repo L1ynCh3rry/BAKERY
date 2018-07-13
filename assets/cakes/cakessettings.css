@@ -323,7 +323,7 @@ a,p,h1,h2,h3,h4,h5,h6{
 }
 #reservationform{
     width: 200px;
-    height: 550px;
+    height: auto;
     padding: 5px;
     background-color: #fff;
     position: absolute;
@@ -363,6 +363,7 @@ a,p,h1,h2,h3,h4,h5,h6{
     margin: auto;
     display: block;
     background: transparent;
+    cursor: pointer;
 }
 #reservationform h1{
     text-transform: uppercase;
@@ -417,9 +418,18 @@ a,p,h1,h2,h3,h4,h5,h6{
     height: 80px;
     margin-top: 30px;
 }
-
-
-
+/* MAP */
+#map .redinfo{
+    background: #dc1c3a;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+}
+#map .redinfo img,
+#map .redinfo p{
+    display: inline-block;
+    margin-bottom: 0;
+}
 
 
 
