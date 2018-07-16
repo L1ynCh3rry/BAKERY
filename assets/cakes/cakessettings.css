@@ -62,9 +62,11 @@ a,p,h1,h2,h3,h4,h5,h6{
     top: 35px;
     overflow: hidden;
     transition: 0.5s ease;
+    border-radius: 5px;
 }
 .topsocialactive{
     height: 150px!important;
+    background: rgba(0, 0, 0, 0.7);
 }
 #topsocial li{
     display: inline-block;
@@ -97,6 +99,10 @@ a,p,h1,h2,h3,h4,h5,h6{
 #topbanner a{
     color: #fff;
     text-transform: uppercase;
+    transition: 0.2s ease;
+}
+#topbanner a:hover{
+    background: rgba(0, 0, 0, 0.4);
 }
 #topbanner h1{
     font-size: 32px;
@@ -247,11 +253,13 @@ a,p,h1,h2,h3,h4,h5,h6{
     height: 350px;
     padding: 0 50px;
 }
-#recommend .swiper-button-prev,
-#recommend .swiper-button-next{
-    color: #fff;
+#recommend .recommendswiper div.swiper-slide{
+    max-width: 300px;
 }
-
+#recommend .swiper-button-next,
+#recommend .swiper-button-prev{
+    outline: none;
+}
 /* POPULAR */
 #cakesnew ul li a i{
     color: #a01731;
@@ -394,7 +402,7 @@ a,p,h1,h2,h3,h4,h5,h6{
     padding-top: 650px;
 }
 #video .embed-responsive{
-    width: 500px;
+    width: 200px;
     margin: auto;
     height: auto;
     border-radius: 10px;
@@ -413,10 +421,16 @@ a,p,h1,h2,h3,h4,h5,h6{
 }
 /* VIDEO THUMB */
 .videothumb{
-    width: 300px;
+    width: 200px;
     margin: auto;
     height: 80px;
     margin-top: 30px;
+}
+#video .swiper-button-prev{
+    background: url('../photos/cakes/videoprev.png') no-repeat;
+}
+#video .swiper-button-next{
+    background: url('../photos/cakes/videonext.png') no-repeat;
 }
 /* MAP */
 #map .redinfo{
@@ -431,8 +445,68 @@ a,p,h1,h2,h3,h4,h5,h6{
     margin-bottom: 0;
 }
 
+/* FOOTER */
+footer{
+    background: url('../photos/cakes/footerbg.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 650px;
+    padding: 70px 0;
+}
+footer h2{
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+footer a,
+footer p{
+    color: #979a9c;
+    text-transform: capitalize;
+}
+footer a:hover{
+    color: #fff;
+}
+footer form input[type=email],
+footer form input[type=email]:hover,
+footer form input[type=email].active,
+footer form input[type=email].focus{
+    width: 100%;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    padding: 5px 10px;
+    outline: none;
+    margin-bottom: 10px;
+}
+footer form input[type=email]::placeholder{
+    color: #fff;
+}
+footer form input[type=submit],
+footer form input[type=submit]:hover,
+footer form input[type=submit].active,
+footer form input[type=submit].focus{
+    width: 50%;
+    border-radius: 50px;
+    background: #fff;
+    color: #000;
+    padding: 5px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
 
 
+footer .social li{
+    float: left;
+}
+footer .social ul li a{
+    background: #fff;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: #0a101a;
+    margin-right: 5px;
+}
 
 
 

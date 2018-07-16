@@ -116,23 +116,19 @@ $("#newsletter").validate({
 
 
 
-
-    var swiper = new Swiper('.recommendswiper', {
-        slidesPerView: 5,
-        spaceBetween: 10,
-        slidesPerGroup: 5,
-        loop: true,
-        loopFillGroupWithBlank: true,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
+      var swiper = new Swiper('.recommendswiper', {
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+        freeMode: true,
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         },
+        pagination: {
+          el: '.bakeryswiper-pagination',
+          type: 'fraction',
+        }
       });
-
 
       var swiper = new Swiper('.videothumb', {
         navigation: {
@@ -143,9 +139,18 @@ $("#newsletter").validate({
 
       
 
+      /* RATE */
+      $(function() {
+        $('.cakesheart').click(function(){
+          $(this).attr('class',"fas fa-star fa-2x cakesheart");
+        });
+      });
 
-
-
+      $(function() {
+          $('.defprevent').click(function(){
+            event.preventDefault();
+          })
+      })
 
 
 
