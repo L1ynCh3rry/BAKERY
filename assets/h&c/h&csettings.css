@@ -1,0 +1,96 @@
+.pacifico{
+    font-family: 'Pacifico', cursive;
+}
+img{
+    max-width: 100%;
+}
+#body{
+    padding-top: 50px;
+}
+h1,h2,h3,h4,h5,h6,p,a{
+    font-family: 'Montserrat', sans-serif;
+}
+.os{
+    font-family: 'Open Sans', sans-serif;
+
+}
+/* HEADER */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110px;
+    transition: 0.2s ease;
+    z-index: 5;
+    background-color: #fff;
+    padding: 15px 0;
+}
+.shrink{
+    height: 90px!important;
+    padding: 5px 0;
+}
+header ul{
+    align-items: center;
+
+}
+header ul li{
+    display: inline-block;
+    float: none;
+    vertical-align: middle;
+}
+header ul li a{
+    color: #969696;
+    margin-right: 25px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+header ul li:last-of-type a{
+    margin-right: 0;
+}
+header ul li a.pacifico{
+    font-size: 24px;
+    font-weight: 300;
+}
+/* TOP BANNER */
+#topbanner .swiper-slide{
+    background: url('../photos/hc/topbanner.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 780px;
+    padding: 150px 0px;
+}
+#topbanner h1{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 30px!important;
+    font-weight: bold;
+}
+#topbanner p{
+    color: #fff;
+    margin: 30px 0;
+}
+#topbanner a{
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    padding: 5px 15px;
+    background: rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    transition: 0.1s ease;
+    font-weight: 500;
+}
+#topbanner a:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+.swiper-pagination-bullet{
+    background-color: #fff;
+    opacity: 1;
+    height: 8px;
+    width: 8px;
+    margin-right: 15px!important;
+}
+.swiper-pagination-bullet-active{
+    background-color: #dda03a;
+}
