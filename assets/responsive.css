@@ -88,8 +88,13 @@
     .videothumb{
         width: 300px;
     }
-
-
+    /* HAM AND CHEESE */
+    header a.pacifico{
+        font-size: 24px;
+    }
+    #hac .div{
+        width: 300px;
+    }
 
 }
 
@@ -298,10 +303,64 @@
     #video .embed-responsive{
         width: 400px;
     }
-
-
-
-
+    /* HAM AND CHEESE */
+    /* HEADER */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110px;
+    transition: 0.2s ease;
+    z-index: 5;
+    background-color: #fff;
+    padding: 15px 0;
+}
+.shrink{
+    height: 90px!important;
+    padding: 5px 0;
+}
+header ul{
+    align-items: center;
+    position: static;
+    background: none;
+    width: auto;
+    height: auto;
+}
+header ul li{
+    display: inline-block;
+    float: none;
+    vertical-align: middle;
+}
+header ul li a{
+    color: #969696;
+    margin-right: 5px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+header ul li:last-of-type a{
+    margin-right: 0;
+}
+header ul li a.pacifico{
+    font-size: 24px;
+    font-weight: 300;
+}
+header ul li.px-md-5{
+    display: inline-block;
+}
+#hacmenutoggle,
+#hacmenuclose,
+.hacmenudiv{
+    display: none;
+}
+header .logo{
+    display: none;
+}
+#hac .div{
+    width: 400px;
+    padding-right: 50px;
+}
 
 
 
@@ -386,6 +445,15 @@
     #video .embed-responsive{
         width: 500px;
     }
+    /* HAM AND CHEESE */
+    header ul li a{
+        margin-right: 15px;
+        font-size: 12px;
+    }
+    #hac .div{
+        width: 500px;
+        padding-right: 50px;
+    }
 }
 
 @media(min-width:1200px) {    /*            1200            */
@@ -456,7 +524,11 @@
     #reservationform h1{
         font-size: 32px;
     }
-
+/* HAM AND CHEESE */
+header ul li a{
+    margin-right: 25px;
+    font-size: 12px;
+}
 
 
 }

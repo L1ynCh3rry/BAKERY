@@ -14,6 +14,8 @@ h1,h2,h3,h4,h5,h6,p,a{
     font-family: 'Open Sans', sans-serif;
 
 }
+
+
 /* HEADER */
 header{
     position: fixed;
@@ -31,34 +33,76 @@ header{
     padding: 5px 0;
 }
 header ul{
-    align-items: center;
-
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 6;
+    transition: 0.2s ease-in-out;
 }
 header ul li{
-    display: inline-block;
-    float: none;
     vertical-align: middle;
 }
 header ul li a{
-    color: #969696;
-    margin-right: 25px;
+    color: #fff;
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+}
+header ul li:last-of-type a{
+    position: absolute;
+    bottom: 5px;
+    left: 49%;
+}
+header ul li.px-md-5{
+    display: none;
 }
 header ul li:last-of-type a{
     margin-right: 0;
 }
-header ul li a.pacifico{
-    font-size: 24px;
+header a.pacifico{
+    font-size: 18px;
     font-weight: 300;
 }
+.hacmenuactive{
+    top: 0!important;
+}
+header .col-auto p{
+    position: absolute;
+    top: 2px;
+    right: 28px;
+    background: #f00;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+}
+header .col-auto img{
+    max-width: 45px;
+    max-height: 45px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+
+
+
+
 /* TOP BANNER */
 #topbanner .swiper-slide{
     background: url('../photos/hc/topbanner.jpg') no-repeat;
     background-position: center;
     background-size: cover;
     min-height: 780px;
-    padding: 150px 0px;
+    padding: 200px 0px;
 }
 #topbanner h1{
     color: #fff;
@@ -94,3 +138,76 @@ header ul li a.pacifico{
 .swiper-pagination-bullet-active{
     background-color: #dda03a;
 }
+/* HAM AND CHEESE */
+#hac{
+    background: url('../photos/hc/banner2.png') no-repeat;
+    background-position: left;
+    background-size: auto;
+    min-height: 710px;
+    position: relative;
+}
+#hac .div{
+    width: 100px;
+    height: auto;
+    margin-top: 100px;
+    float: right;
+}
+#hac h4{
+    color: #dda03a;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+#hac .div a{
+    color: #dda03a;
+    border-radius: 50px;
+    border: 2px solid #dda03a;
+    padding: 5px 10px;
+    display: inline-block;
+}
+#hac h2{
+    color: #3e2720;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+#hac .from{
+    position: absolute;
+    width: auto;
+    top: 15%;
+    left: 37%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 45px rgba(0, 0, 0, 0.3);
+}
+#hac .from a{
+    color: #dda03a;
+    letter-spacing: 2px;
+    display: block;
+    font-weight: 700;
+    font-size: 10px;
+}
+#hac .from a:last-of-type{
+    font-size: 28px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

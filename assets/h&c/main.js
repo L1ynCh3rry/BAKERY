@@ -10,15 +10,15 @@ $(document).ready(function() {
     });
 
      /* NAVIGATION TOGGLE BUTTON */ 
-$('#ffmenutoggle').click(function() {
+$('#hacmenutoggle').click(function() {
   event.preventDefault();
-$('#ffmenu').addClass('ffmenuactive');
+$('#hacmenu').addClass('hacmenuactive');
 $('#body').addClass('overflow');
 });
 
-$('#ffmenuclose').click(function() {
+$('#hacmenuclose').click(function() {
   event.preventDefault();
-$('#ffmenu').removeClass('ffmenuactive');
+$('#hacmenu').removeClass('hacmenuactive');
 $('#body').removeClass('overflow');
 });
 
