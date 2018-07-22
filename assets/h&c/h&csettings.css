@@ -73,16 +73,16 @@ header a.pacifico{
 }
 header .col-auto p{
     position: absolute;
-    top: 2px;
-    right: 28px;
+    top: 17px;
+    right: 36px;
     background: #f00;
     color: #fff;
     border-radius: 50%;
     width: 20px;
 }
 header .col-auto img{
-    max-width: 45px;
-    max-height: 45px;
+    max-width: 40px;
+    max-height: 40px;
     border-left: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -147,7 +147,7 @@ header .col-auto img{
     position: relative;
 }
 #hac .div{
-    width: 100px;
+    width: 100%;
     height: auto;
     margin-top: 100px;
     float: right;
@@ -161,8 +161,9 @@ header .col-auto img{
     color: #dda03a;
     border-radius: 50px;
     border: 2px solid #dda03a;
-    padding: 5px 10px;
+    padding: 7px 20px;
     display: inline-block;
+    text-transform: uppercase;
 }
 #hac h2{
     color: #3e2720;
@@ -172,7 +173,7 @@ header .col-auto img{
 #hac .from{
     position: absolute;
     width: auto;
-    top: 15%;
+    top: 5%;
     left: 37%;
     background: #fff;
     padding: 20px;
@@ -189,7 +190,61 @@ header .col-auto img{
 #hac .from a:last-of-type{
     font-size: 28px;
 }
-
+/* Prosciutto and cheese */
+#pac .pacL{
+    background: url('../photos/hc/ch1.jpg') no-repeat;
+}
+#pac .pacR{
+    background: url('../photos/hc/ch2.jpg') no-repeat;
+}
+#pac .pacL,
+#pac .pacR{
+    background-position: center;
+    background-size: cover;
+    min-height: 790px;
+    padding-top: 130px;
+}
+#pac .pacdiv{
+    width: 400px;
+    min-height: 500px;
+    background: url('../photos/hc/cheeseham.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    padding-top: 50px;
+}
+#pac h4{
+    color: #dda03a;
+    letter-spacing: 4px;
+    font-weight: 300;
+}
+#pac h3{
+    color: #3e2720;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+}
+#pac .dots{
+    border-bottom: 2px dotted #dda03a;
+    padding: 0 15px 10px;
+}
+#pac h2{
+    color: #3e2720;
+    letter-spacing: 6px;
+    font-size: 42px;
+    font-weight: 700;
+}
+#pac a{
+    color: #dda03a;
+    border: 2px solid #dda03a;
+    border-radius: 50px;
+    padding: 7px 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 30px;
+}
 
 
 

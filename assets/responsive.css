@@ -95,7 +95,10 @@
     #hac .div{
         width: 300px;
     }
-
+    #hac .from{
+        top: 5%;
+        left: 10%;
+    }
 }
 
 @media(min-width:768px) {   /*             768            */
@@ -361,7 +364,10 @@ header .logo{
     width: 400px;
     padding-right: 50px;
 }
-
+#hac .from{
+    top: 12%;
+    left: 30%;
+}
 
 
 
@@ -451,9 +457,29 @@ header .logo{
         font-size: 12px;
     }
     #hac .div{
-        width: 500px;
+        width: 470px;
         padding-right: 50px;
     }
+    #hac .from{
+        left: 40%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 @media(min-width:1200px) {    /*            1200            */
@@ -529,7 +555,10 @@ header ul li a{
     margin-right: 25px;
     font-size: 12px;
 }
-
+#hac .from{
+    top: 12%;
+    left: 50%;
+}
 
 }
 
