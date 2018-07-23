@@ -205,8 +205,8 @@ header .col-auto img{
     padding-top: 130px;
 }
 #pac .pacdiv{
-    width: 400px;
-    min-height: 500px;
+    width: 100%;
+    min-height: 450px;
     background: url('../photos/hc/cheeseham.png') no-repeat;
     background-position: center;
     background-size: cover;
@@ -245,13 +245,70 @@ header .col-auto img{
     display: inline-block;
     margin-top: 30px;
 }
+/* FEATURED */
+#featured{
+    background: url('../photos/hc/featuredbg.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 820px;
+    padding-top: 50px;
+}
+#featured sup{
+    font-size: 8px;
+    letter-spacing: 0.5px;
+}
+#featured ul{
+    align-items: center;
+}
+#featured ul li{
+    display: inline-block;
+    float: none;
+}
+#featured ul li a{
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+#featured ul li a::after{
+    content: " / ";
+}
+#featured ul li:last-of-type a::after{
+    content: none;
+}
+#featured ul li a.active{
+    color: #dda03a;
+}
+#featured ul li a.active::after{
+    color: #000;
+}
+/* FEATURED SWIPER */
+#featured .swiper-slide{
+    max-width: 385px;
+}
+#featured figure img{
+    min-width: 100%;
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+}
+#featured figure{
+    overflow: hidden;
+    max-width: 385px;
+    height: 385px;
+}
+#featured .swiper-container{
+    height: auto;
+    width: 90%;
+}
+#featured .swiper-button-next{
+    background: url('../photos/hc/arrowR.png') no-repeat;
 
-
-
-
-
-
-
+}
+#featured .swiper-button-prev{
+    background: url('../photos/hc/arrowR.png') no-repeat;
+    transform: rotateY(180deg);
+}
 
 
 

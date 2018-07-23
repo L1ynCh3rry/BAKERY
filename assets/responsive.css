@@ -12,7 +12,9 @@
     #aboutbakerys{
         width: 300px;
     }
-
+    #pac .pacdiv{
+        width: 400px;
+    }
 
 
 } /* CUSTOM */
@@ -368,7 +370,9 @@ header .logo{
     top: 12%;
     left: 30%;
 }
-
+#pac .pacdiv{
+    width: 300px;
+}
 
 
 
@@ -463,7 +467,9 @@ header .logo{
     #hac .from{
         left: 40%;
     }
-
+    #pac .pacdiv{
+        width: 400px;
+    }
 
 
 
