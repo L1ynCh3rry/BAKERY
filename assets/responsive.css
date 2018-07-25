@@ -15,7 +15,15 @@
     #pac .pacdiv{
         width: 400px;
     }
-
+    #sub .subandsave{
+        padding: 70px 0;
+    }
+    #sub h2{
+        font-size: 26px;
+    }
+    #sub h2 span{
+        font-size: 40px;
+    }
 
 } /* CUSTOM */
 
@@ -373,7 +381,9 @@ header .logo{
 #pac .pacdiv{
     width: 300px;
 }
-
+#sub .subandsave{
+    padding: 70px 120px;
+}
 
 
 

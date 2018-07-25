@@ -69,7 +69,20 @@ messages: {
 
 
 
-
+$("#subs").validate({
+  rules: {
+    email: {
+        required: true,
+        email: true
+    }
+  },
+  messages: {
+    email: {
+        required: '<p style="color: #f00;">Email adress is required</p>',
+        email: '<p style="color: #f00;">Please enter a valid email adress'
+    }
+  }
+  });
 
 
 
